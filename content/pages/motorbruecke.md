@@ -1,6 +1,6 @@
 # Motorbruecke
 
-![][1]  
+![](%assets_url%/motorbridge.jpg)  
 *Motor Brücke*
 
 ## Funktionsweise
@@ -11,13 +11,13 @@ Der ASURO besitzt für jeden seiner beiden Motoren eine diskret aufgebaute H-Br�
 
 Hier ist der Transistoren T1 durchgeschaltet. Transistor T4 ist in Abhängigkeit von dem angelegten PWM Signal durchgeschaltet oder gesperrt. Dadurch wird die Geschwindigkeit des Motors geregelt. T2 und T3 sperren. Der Strom kann über T1 durch den Motor über T4 nach GND fliessen. 
 
-![][2]
+![](%assets_url%/motorbridge_forw.jpg)
 
 ### Motor links dreht rückwärts
 
 Hier sind die Transistoren T2 und T3 durchgeschaltet. Transistor T3 ist in Abhängigkeit von dem angelegten PWM Signal durchgeschaltet oder gesperrt. Dadurch wird die Geschwindigkeit des Motors geregelt. T1 und T4 sperren. Der Strom kann über T2 in der anderen Richtung durch den Motor über T3 nach GND fliessen. 
 
-![][3]
+![](%assets_url%/motorbridge_back.jpg)
 
 ### Motor links bremsen
 
@@ -38,47 +38,41 @@ Die Transistoren T1 und T3 sperren. Kein Strom fließt durch den Motor.
 
 ## Programmierung
 
-Um die Motoren anzusteuern gibt es in der [Asuro Bibliothek][4] die fertigen Funktionen MotorDir() und MotorSpeed () und die Definitionen FWD, RWD, BREAK, FREE. Einige Beispiele dazu: 
+Um die Motoren anzusteuern gibt es in der [Asuro Bibliothek]((http://www.asurowiki.de/pmwiki/pmwiki.php/Main/Bibliothek)) die fertigen Funktionen MotorDir() und MotorSpeed () und die Definitionen FWD, RWD, BREAK, FREE. Einige Beispiele dazu: 
 
+```c
 /* Asuro vorwärts fahren lassen */  
-Â  MotorDir(FWD,FWD);Â  Â /* Beide Motoren Drehrichtung vorwärts */  
-Â  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
+  MotorDir(FWD,FWD);   /* Beide Motoren Drehrichtung vorwärts */  
+  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
 
 /* Asuro rückwärts fahren lassen */  
-Â  MotorDir(RWD,RWD);Â  Â /* Beide Motoren Drehrichtung rückwärts */  
-Â  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
+  MotorDir(RWD,RWD);   /* Beide Motoren Drehrichtung rückwärts */  
+  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
 
 /* Asuro auf der Stelle rechts drehen lassen */  
-Â  MotorDir(FWD,RWD);Â  Â /* Motoren Drehrichtung links vorwärts, rechts rückwärts */  
-Â  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
+  MotorDir(FWD,RWD);   /* Motoren Drehrichtung links vorwärts, rechts rückwärts */  
+  MotorSpeed(255,255); /* Beide Motoren Geschwindigkeit maximal */
 
 /* Asuro eine Rechtskurve fahren lassen */  
-Â  MotorDir(FWD,FWD);Â  Â /* Beide Motoren Drehrichtung vorwärts */  
-Â  MotorSpeed(255,);Â  Â /* Motoren Geschwindigkeit links maximal, rechts stop */
+  MotorDir(FWD,FWD);   /* Beide Motoren Drehrichtung vorwärts */  
+  MotorSpeed(255,);    /* Motoren Geschwindigkeit links maximal, rechts stop */
 
 /* Asuro eine Linkskurve fahren lassen */  
-Â  MotorDir(FWD,FWD);Â  Â /* Beide Motoren Drehrichtung vorwärts */  
-Â  MotorSpeed(, 255);Â  Â /* Motoren Geschwindigkeit links stop, rechts maximal */
+  MotorDir(FWD,FWD);   /* Beide Motoren Drehrichtung vorwärts */  
+  MotorSpeed(, 255);   /* Motoren Geschwindigkeit links stop, rechts maximal */
 
 /* Asuro schnell abbremsen lassen */  
-Â  MotorDir(BREAK,BREAK);Â  Â /* Beide Motoren bremsen */  
-Â  MotorSpeed(, );Â  Â  Â  Â  /* Beide Motoren stop */
+  MotorDir(BREAK,BREAK);  /* Beide Motoren bremsen */  
+  MotorSpeed(0, 0);       /* Beide Motoren stop */
+```  
 
 ## Besondere Verwendung der Motorbrücken
 
 ### Soundausgabe
 
-Tatsächlich kann man die Ansterung der Motoren über die Motorbrücken dazu 'mißbrauchen', dem ASURO Töne zu entlocken. Die PWM Frequenz wird zur Lautstärke Regelung benutzt. Die hörbare Frequenz wird durch schnelles Umpolen der Motorrichtung erreicht. Der Thread zur Soundfunktion aus dem [Roboternetz][5]. Damit ist aber lediglich Monosound realisiert. Aber auch Stereosound, bzw. polyphone Klänge sind möglich, da der ASURO ja zwei Motren besitzt, können diese auch getrennt voneinander angesteuert werden. Auch hierzu gibt es einen Thread im [Roboternetz][6]. Seit der Version 2.70RC3 ist die Monosound Funktion in der [Asuro Lib][4] enthalten. Mit der Release 2.80 auch die Stereosound Funktion. 
+Tatsächlich kann man die Ansterung der Motoren über die Motorbrücken dazu 'mißbrauchen', dem ASURO Töne zu entlocken. Die PWM Frequenz wird zur Lautstärke Regelung benutzt. Die hörbare Frequenz wird durch schnelles Umpolen der Motorrichtung erreicht. Der Thread zur Soundfunktion aus dem [Roboternetz](http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=23716). Damit ist aber lediglich Monosound realisiert. Aber auch Stereosound, bzw. polyphone Klänge sind möglich, da der ASURO ja zwei Motren besitzt, können diese auch getrennt voneinander angesteuert werden. Auch hierzu gibt es einen Thread im [Roboternetz](http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=31867). Seit der Version 2.70RC3 ist die Monosound Funktion in der [Asuro Lib](http://www.asurowiki.de/pmwiki/pmwiki.php/Main/Bibliothek) enthalten. Mit der Release 2.80 auch die Stereosound Funktion. 
 
 ## Weiterführende Links:
 
-*   [H-Bridge demystified][7]
-
- [1]: http://www.asurowiki.de/pmwiki/uploads/Main/motorbridge.jpg ""
- [2]: http://www.asurowiki.de/pmwiki/uploads/Main/motorbridge_forw.jpg ""
- [3]: http://www.asurowiki.de/pmwiki/uploads/Main/motorbridge_back.jpg ""
- [4]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/Bibliothek
- [5]: http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=23716
- [6]: http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=31867
- [7]: http://www.barello.net/Papers/H-Bridge.pdf
+* [H-Bridge demystified](http://www.barello.net/Papers/H-Bridge.pdf)
 

@@ -1,35 +1,35 @@
 # Aufbau
 
-![](../images/asuro_oben.jpg)
+![Asuro von oben](%assets_url%/asuro_oben.jpg)
 
 
 ## ASURO Aufbau
 
 Die Platine für die Elektronik dient gleichzeitig als Chassis und Fahrgestell. Je 2 Achsen für die Getriebe und die Räder werden direkt auf die Platine gelötet. Als Stützrad dient ein halber TT-Ball, der mit Superkleber von unten auf die Platine geklebt wird. 
 
-*   [Prozessor](prozessor.md). Atmel AVR 8-Bit RISC [ATmega8L][7]. 
-*   2 [Motorbrücken](motorbruecke.md). Diskret aufgebaut mit Transistoren. 
-*   [Linienfolger](liniensensor.md) mit 2 Fototransistoren 
-*   2 [Odometrie Sensoren](odometrie.md) an den Räder. 30 oder 40 Impulse pro Umdrehung, je nach verwendeter Encoderscheibe. 
+*   [Prozessor](prozessor). Atmel AVR 8-Bit RISC [ATmega8L][7]. 
+*   2 [Motorbrücken](motorbruecke). Diskret aufgebaut mit Transistoren. 
+*   [Linienfolger](liniensensor) mit 2 Fototransistoren 
+*   2 [Odometrie Sensoren](odometrie) an den Räder. 30 oder 40 Impulse pro Umdrehung, je nach verwendeter Encoderscheibe. 
 *   6 [Tasten][(tasten.md) als Stoßschalter oder für Benutzereingaben an der Vorderseite. 
-*   [Infrarotschnittstelle](infrarotschnittstelle.md) 2400Baud bidirektional zur PC Kommunikation und Programmierung. 
-*   [Stromversorgung](stromversorgung.md) über 4 Micro Zellen AAA. Akkus können verwendet werden. Spannungsüberwachung über Widerstandsteiler. 
-*   5 [LEDs](led-anzeigen.md) für Statusanzeigen. 
+*   [Infrarotschnittstelle](infrarotschnittstelle) 2400Baud bidirektional zur PC Kommunikation und Programmierung. 
+*   [Stromversorgung](stromversorgung) über 4 Micro Zellen AAA. Akkus können verwendet werden. Spannungsüberwachung über Widerstandsteiler. 
+*   5 [LEDs](led-anzeigen) für Statusanzeigen. 
 
 ##  Zubehör
 
-*   [Infrarot RS232 Transceiver](infrarot-rs232-transceiver.md) - Im ASURO Bausatz enthalten 
-*   [Infrarot USB Transceiver](infrarot-usb-transceiver.md) - Optional erhältlich 
+*   [Infrarot RS232 Transceiver](infrarot-rs232-transceiver) - Im ASURO Bausatz enthalten 
+*   [Infrarot USB Transceiver](infrarot-usb-transceiver) - Optional erhältlich 
 
 ## Technische Daten
 
-| **Allgemeines**                    | Â                                                                                              |
+| **Allgemeines**                    |                                                                                             |
 ||
 | Abmessungen (LxBxH):               | ca. 117x122x45mm                                                                              |
 | Stromversorgung:                   | 4 x AAA/Micro-Batterien oder Akkus (4 x 1,5V -> 6V mit Batterien, 4 x 1,2V -> 4,8V mit Akkus) |
-| **Motoren**                        | Â                                                                                              |
-| Typ:                               | Igarashi 2025-02, Conrad Artikel-Nr.: 244414 - V3                                             |
-| Abmessungen:                       | 25,0 mm Länge, 20,0 mm Durchmesser, 2,00 mm Wellendurchmesser                                   |
+| **Motoren**                        |                                                                                             |
+| Typ:                               | Igarashi 2025-02, Conrad Artikel-Nr.: 244414 -V3                                            |
+| Abmessungen:                       | 25,0 mm Länge, 20,0 mm Durchmesser, 2,00 mm Wellendurchmesser                               |
 | Gewicht:                           | 18g                                                                                           |
 | Nennspannung:                      | 12V                                                                                           |
 | Spannungsbereich:                  | 3..12V                                                                                        |
