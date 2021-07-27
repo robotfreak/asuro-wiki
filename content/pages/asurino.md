@@ -2,27 +2,27 @@
 
 ## Einleitung
 
-[Arduino][1] ist eine Open-Source- Plattform, basierend auf einem Microcontroller-Board und einer Entwicklungsumgebung mit einer API für den Microcontroller. Als Microcontroller wird neben dem ATmega8 in neueren Boards der ATmega168 verwendet. Die Arduino Entwicklungumgebung ist in Java programmiert und läuft auf den gängigen PC Plattformen Windows/Linux/Mac. 
+[Arduino](http://www.arduino.cc/) ist eine Open-Source- Plattform, basierend auf einem Microcontroller-Board und einer Entwicklungsumgebung mit einer API für den Microcontroller. Als Microcontroller wird neben dem ATmega8 in neueren Boards der ATmega168 verwendet. Die Arduino Entwicklungumgebung ist in Java programmiert und läuft auf den gängigen PC Plattformen Windows/Linux/Mac. 
 
-Der Microcontroller auf dem Board wird mit Hilfe der Arduino Programmiersprache programmiert. Diese basiert auf [Wiring][2] mit der Syntax von C, bzw. C++. Die Entwicklungsumgebung baut auf [Processing][3] auf. 
+Der Microcontroller auf dem Board wird mit Hilfe der Arduino Programmiersprache programmiert. Diese basiert auf [Wiring](http://wiring.org.co/) mit der Syntax von C, bzw. C++. Die Entwicklungsumgebung baut auf [Processing]((http://www.processing.org/)) auf. 
 
-Asurino ist eine Arduino Bibliothek für den Asuro. Die Idee dazu stammt aus dem [Arduino Playground][4], in dem Arduino Nutzer ihre Projekte vorstellen. Unter [Arduino and the Asuro Robot][5] von Jakob Remin findet man neben einer Quick&Dirty Methode zur Modifikation des Asuros auch ein Arduino Sketch zur Ansteuerung dses Asuros. Einige Funktionen wurden auch aus der [Asuro Bibliothek][6] übernommen. 
+Asurino ist eine Arduino Bibliothek für den Asuro. Die Idee dazu stammt aus dem [Arduino Playground](http://www.arduino.cc/playground), in dem Arduino Nutzer ihre Projekte vorstellen. Unter [Arduino and the Asuro Robot](http://www.arduino.cc/playground/Learning/Asuro) von Jakob Remin findet man neben einer Quick&Dirty Methode zur Modifikation des Asuros auch ein Arduino Sketch zur Ansteuerung dses Asuros. Einige Funktionen wurden auch aus der [Asuro Bibliothek](bibliothek) übernommen. 
 
-Derzeit läuft das ganze mit Einschränkungen auf jedem Asuro. Die volle Funktionalität der Arduino IDE geht derzeit aber nur mit einem modifizierten Asuro, bei dem die UART Schnittstelle herausgeführt ist. Entweder über ein [RS232 Modul][7], oder einem USB Seriell Wandler Modul. Mit Einschränkungen auch mit dem [Bluetooth Modul][8]. 
+Derzeit läuft das ganze mit Einschränkungen auf jedem Asuro. Die volle Funktionalität der Arduino IDE geht derzeit aber nur mit einem modifizierten Asuro, bei dem die UART Schnittstelle herausgeführt ist. Entweder über ein [RS232 Modul](rs232-wandler), oder einem USB Seriell Wandler Modul. Mit Einschränkungen auch mit dem [Bluetooth Modul](bluetooth-modem). 
 
 ## Was man benötigt
 
 *   natürlich einen Asuro 
-*   die [Arduino Umgebung][9] (inklusive AVR Compiler) 
-*   Die [Asurino Bibliothek][10], die Arduino Bibliothek für den Asuro auf Sourceforge 
+*   die [Arduino Umgebung](http://www.arduino.cc/en/Main/Software) (inklusive AVR Compiler) 
+*   Die [Asurino Bibliothek](http://sourceforge.net/project/showfiles.php?group_id=155217), die Arduino Bibliothek für den Asuro auf Sourceforge 
 
 Optional sind: 
 
 *   einen neuen ATmega168 oder ATmega328 
-*   ein ISP Programmer. Zum Programmieren oder zum einmaligen Programmieren des [AsuroBoot Bootloader][10] 
-*   derzeit noch ein [RS232 Modul][7], USB/seriell Wandler Modul oder ein Arduino Board. Es funktioniert nicht über die Infrarotschnittstelle. Man kann allerdings die erzeugten Hex-Files wie bisher über das Asuro Flasher Tool 
-*   einen modifizierte Asuro, wie z.B. in der [Asuro Erweiterung][11] oder wie bei [Arduino and the Asuro Robot][5] beschrieben. 
-*   Den [AsuroBoot Bootloader][10], angepaßt für den Asuro 
+*   ein ISP Programmer. Zum Programmieren oder zum einmaligen Programmieren des [AsuroBoot Bootloader](http://sourceforge.net/project/showfiles.php?group_id=155217) 
+*   derzeit noch ein [RS232 Modul](rs232-wandler), USB/seriell Wandler Modul oder ein Arduino Board. Es funktioniert nicht über die Infrarotschnittstelle. Man kann allerdings die erzeugten Hex-Files wie bisher über das Asuro Flasher Tool 
+*   einen modifizierte Asuro, wie z.B. in der [Asuro Erweiterung](asuro-erweiterung) oder wie bei [Arduino and the Asuro Robot](http://www.arduino.cc/playground/Learning/Asuro) beschrieben. 
+*   Den [AsuroBoot Bootloader](http://sourceforge.net/project/showfiles.php?group_id=155217), angepaßt für den Asuro 
 
 ## Arduino IDE anpassen
 
@@ -51,7 +51,7 @@ Mit ein paar Änderungen in der Board Beschreibungsdatei hat man ein neues Board
 
 ### Asuro mit ATmega168/ATmega328
 
-Mit der [Asuro Erweiterung][11] und der damit vorhandenen RS232 Schnittstelle lassen sich auch sehr leicht Arduino Skripte laden und ausführen. Allerdings wird dazu auch ein neuer Prozessor mit einem Arduino kompatiblen Bootloader vorausgesetzt. Warum nicht gleich auf den ATmega168 umsteigen. Der bietet neben dem doppelten Speicher für Flash, EEPROM und RAM auch eine Debug Möglichkeit über DebugWire. 
+Mit der [Asuro Erweiterung](asuro-erweiterung) und der damit vorhandenen RS232 Schnittstelle lassen sich auch sehr leicht Arduino Skripte laden und ausführen. Allerdings wird dazu auch ein neuer Prozessor mit einem Arduino kompatiblen Bootloader vorausgesetzt. Warum nicht gleich auf den ATmega168 umsteigen. Der bietet neben dem doppelten Speicher für Flash, EEPROM und RAM auch eine Debug Möglichkeit über DebugWire. 
 
 So sehen die Änderungen in der Board Beschreibungsdatei für den Asuro mit ATmega168 aus. 
 
@@ -99,7 +99,7 @@ Nach einstellen der Schnittstelle wird der Asuro auch gleich erkannt und das Bei
 
 Der Original Asuro verfügt bereits über ienen Bootloader, derzum Flashen mit dem Asuro Flasher Tool verwendet werden kann. Für den ATmega168 benötigt man allerdings einen Bootloader. Damit lassen sich Programme direkt von der Arduino IDE in den Asuro laden. Da der Quellcode für den Bootloader als Open Source zur Verfügung steht, ist das Ändern der Status LED kein Problem. Allerdings blieb auch nach Änderung die recht lange Wartezeit von 10sek bis das Anwenderprogramm gestartet wird. Nach ein paar Internet Recherechen war auch für dieses Problem eine Lösung in Form des ADABOOT Bootloader gefunden. Dieser Bootloader bietet einige Vorteile gegenüber dem Original Arduino Bootloader. 
 
-Allerdings klappt die Übertragung bisher nur über RS232. Bei [Bluetooth][8] Anbindung gibt es keine Verbindung zwischen der Arduino IDE und dem Asuro. Man kan zwar in derBluetooth Umgebung die Verbindung manuell herstellen, dann klappt immerhin die Verbindung im Terminalmode. Versucht man aber ein Sketch zu laden, bricht die Verbindung wieder ab. Mit Hyper Teminal gibt es keine Probleme unter Bluetooth. Schade, aber man kann wohl nicht alles haben. Allerdings besteht noch Hoffnung. Auf der Chip45 Homepage, gibt es den Ur-Bootloader für die Arduino Boards. Dort gibt es auch ein kleines Tool zum Flashen von Programmen über den Bootloader. Dies ließe sich vielleicht anpassen, damit das Flashen auch unter Bluetooth funktioniert. Ein nettes Feature der Arduino Bootloader ist der automatische Reset des Boards, wenn ein neues Programm geflasht werden soll. Dazu muß lediglich ein 100nF Kondensator zwischen Reset Leitung und DTR Steuerleitung gelötet werden. Allerdings führt das auch dazu, dass der Asuro einen Reset ausführt, wenn man die Arduino IDE, bzw. das Terminalprogramm startet. 
+Allerdings klappt die Übertragung bisher nur über RS232. Bei [Bluetooth](bluetooth-modem) Anbindung gibt es keine Verbindung zwischen der Arduino IDE und dem Asuro. Man kan zwar in derBluetooth Umgebung die Verbindung manuell herstellen, dann klappt immerhin die Verbindung im Terminalmode. Versucht man aber ein Sketch zu laden, bricht die Verbindung wieder ab. Mit Hyper Teminal gibt es keine Probleme unter Bluetooth. Schade, aber man kann wohl nicht alles haben. Allerdings besteht noch Hoffnung. Auf der Chip45 Homepage, gibt es den Ur-Bootloader für die Arduino Boards. Dort gibt es auch ein kleines Tool zum Flashen von Programmen über den Bootloader. Dies ließe sich vielleicht anpassen, damit das Flashen auch unter Bluetooth funktioniert. Ein nettes Feature der Arduino Bootloader ist der automatische Reset des Boards, wenn ein neues Programm geflasht werden soll. Dazu muß lediglich ein 100nF Kondensator zwischen Reset Leitung und DTR Steuerleitung gelötet werden. Allerdings führt das auch dazu, dass der Asuro einen Reset ausführt, wenn man die Arduino IDE, bzw. das Terminalprogramm startet. 
 
 Der Bootloader ließe sich eventuell so anpassen, das er auch über die Standard Infrarot Schnittstelle des ASUROs funktioniert. Leider sind alle Versuche bis dahin gescheitert. 
 
@@ -109,7 +109,7 @@ Aus dem bestehenden Sketch von Jakob Remin habe ich angefangen eine Arduino Bibl
 
 ### Referenz
 
-Neben den [Standard Funktionen][12] von Arduino sind folgenden Funktionen in der Asurino Lib enthalten: 
+Neben den [Standard Funktionen](http://www.arduino.cc/en/Reference/HomePage) von Arduino sind folgenden Funktionen in der Asurino Lib enthalten: 
 
 void Init(void);  
 void setTimer2(void);  
@@ -143,38 +143,39 @@ Die Zeile
 ist der Aufruf für den Konstruktor der Asuro Klasse. Die Setup Routine wird einmalig beim Start des Sketches ausgeführt und initialisiert lediglich die serielle Schnittstelle. Die Asuro spezifische Initialisierung passiert bereits im Konstruktor. Die loop Funktion wird dann zyklisch vom Hauptprogramm aufgerufen und durchlaufen. Das eigentliche Programm fragt die Tastsensoren ab. Falls eine Taste gedrückt wurde, wird der Tastenwert binär zum Terminalprogramm gesendet und die Status LED für eine Sekunde auf Rot gesetzt, dann wieder zurück auf Grün. 
 
 ### Beispiel für den Original Asuro 
-
+```c
 #include <Asuro.h>  
 Asuro asuro = Asuro();  
   
   
 void setup()  
 {  
-Â  Serial.begin(2400);  
-Â  asuro.setTimer2();Â  Â  Â /* 36kHz for IR communication */  
+  Serial.begin(2400);  
+  asuro.setTimer2(); /* 36kHz for IR communication */  
 }  
   
   
 void loop()  
 {  
-Â  int Switches;  
-Â  /* front switch check */  
-Â  Switches = asuro.readSwitches();  
-Â  if (Switches)Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â /* Key pressed? */  
-Â  {  
-Â  Â  Serial.println("switches pressed");  
-Â  Â  Serial.println(Switches, BIN);Â  Â  /* send key value in binary */  
-Â  Â  asuro.setStatusLED(RED);Â  Â  Â  Â  Â  /* status led red */  
-Â  Â  delay(1000);Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  /* wait 1sec */  
-Â  }  
-Â  asuro.setStatusLED(GREEN);Â  Â  Â  Â  Â  /* status led green */  
+  int Switches;  
+  /* front switch check */  
+  Switches = asuro.readSwitches();  
+  if (Switches) /* Key pressed? */  
+  {  
+    Serial.println("switches pressed");  
+    Serial.println(Switches, BIN);  /* send key value in binary */  
+    asuro.setStatusLED(RED);  /* status led red */  
+    delay(1000);              /* wait 1sec */  
+  }  
+  asuro.setStatusLED(GREEN); /* status led green */  
 }
+```
 
 ## Weblinks
 
-*   [www.arduino.cc][1] 
+*   [www.arduino.cc](http://www.arduino.cc/) 
 *   [www.wiring.org][2] 
-*   [www.processing.org][3] 
+*   [www.processing.org](http://www.processing.org/)
 *   [Wikipedia][13] - Processing 
 *   [Arduino Playground][4] 
 *   [Arduino and the Asuro Robot][5] 
