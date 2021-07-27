@@ -1,25 +1,25 @@
 # Programmierung
 
-ASURO Programmierung. <vspace>
+ASURO Programmierung. 
 
-## Allgemein<vspace>
+## Allgemein
 
-*   [Bootloader][bootlaoder.md] <vspace>
+*   [Bootloader][bootlaoder.md] 
 
-## Entwicklungsumgebungen<vspace>
+## Entwicklungsumgebungen
 
 *   [Asuro Flasher Tool][2] 
 *   [AVR Studio][3] 
 *   [Eclipse][4] 
 *   [Microsoft Visual Studio][5] 
 *   [Programmers Notepad][6] 
-*   [WinAVR][7] <vspace>
+*   [WinAVR][7] 
 
-## C, C++<vspace>
+## C, C++
 
-Programmiert wird der ASURO normalerweise in 'C'. Dazu ist auf der zum Bausatz gehörenden CD die [AVR-GCC][8] Toolchain enthalten. <vspace>
+Programmiert wird der ASURO normalerweise in 'C'. Dazu ist auf der zum Bausatz gehörenden CD die [AVR-GCC][8] Toolchain enthalten. 
 
-Die Demoprogramme und die ASURO Bibliothek von der CD sind in 'C' programmiert. <vspace>
+Die Demoprogramme und die ASURO Bibliothek von der CD sind in 'C' programmiert. 
 
 *   [Die Asuro Bibliothek][bibliothek.md] 
 *   [Tiny Asuro Lib][10] 
@@ -27,18 +27,18 @@ Die Demoprogramme und die ASURO Bibliothek von der CD sind in 'C' programmiert. 
 *   [Beispiel Programme in C][12] 
 *   [Makefile Howto][13] 
 *   [Asuro Hexfiles][hexfiles.md] 
-*   [C-Syntax Überprüfung][15] <vspace>
+*   [C-Syntax Überprüfung][15] 
 
-## Andere Programmiersprachen<vspace>
+## Andere Programmiersprachen
 
-Außer in 'C' läßt sich der ASURO auch in anderen Programmiersprachen programmieren: <vspace>
+Außer in 'C' läßt sich der ASURO auch in anderen Programmiersprachen programmieren: 
 
 *   [Assembler][16] 
 *   [BASIC][17] 
 *   [Java][18] 
-*   [Pascal][19] <vspace>
+*   [Pascal][19] 
 
-## Weiterführende Links<vspace>
+## Weiterführende Links
 
 *   [WinAVR][20] - AVR-GCC Entwicklungsumgebung für Windows 
 *   [AVR-GCC-Tutorial][21] 
@@ -46,7 +46,7 @@ Außer in 'C' läßt sich der ASURO auch in anderen Programmiersprachen programm
 *   [AVR Libc][23] - Eine C-Library für Atmel AVR 
 *   [Procyon AVRlib][24] - Eine weitere C-Library für Atmel AVR. 
 *   [grafische Programmierung mit WinFACT][25] 
-*   [Arduino and the Asuro Robot][26] <vspace>
+*   [Arduino and the Asuro Robot][26] 
 
  [1]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/Bootloader
  [2]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/AsuroFlasherTool?action=edit

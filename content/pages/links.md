@@ -1,9 +1,9 @@
 # Links
 
 
-ASURO Links <vspace>
+ASURO Links 
 
-## ASURO Allgemeines<vspace>
+## ASURO Allgemeines
 
 *   [www.arexx.com][12] - Hersteller des ASURO 
 *   [Roboternetz Wiki][13] - ASURO Forum 
@@ -13,9 +13,9 @@ ASURO Links <vspace>
 *   [www.roboterbastler.de][17] - Artikel über den Roboterbausatz ASURO 
 *   [Praktikum Jens Windau][18] - Bericht über ein Praktikum bei der DLR 
 *   <http://www.mister-wong.de/tags/asuro/> - Mr. Wong Social bookmarking 
-*   [linux-magazin.de][19] - Workshop: Roboter-Bausatz für Linux-Tüftler Mechanischer Diener. Bericht im Linux-Magazin 06/2005 über den Asuro. <vspace>
+*   [linux-magazin.de][19] - Workshop: Roboter-Bausatz für Linux-Tüftler Mechanischer Diener. Bericht im Linux-Magazin 06/2005 über den Asuro. 
 
-##  ASURO an Schulen<vspace>
+##  ASURO an Schulen
 
 *   <http://www.derbeagle.de/asuro/> - Gymnasium Vegesack in Bremen, Asuro im Labyrinth 
 *   [www.gsf-robot-contest.de][20] - Gesamtschule Fröndenberg, Erweiterungsplatine für den Asuro (2x IR Entfernungssensor, 3x Liniensensor, Transportfach mit Lichtschranke) 
@@ -29,7 +29,7 @@ ASURO Links <vspace>
 *   <http://glossar.fh-augsburg.de/ASURO> - FH Augsburg, ASURO Wiki 
 *   <http://ddp07.byethost9.com/Asuro/index.php> - Gymnasium Eckhorst, Asuro Projekt des Informatikkurses 12/13, Teilnehmer am Roboterwettbewerb Daniel Düsentrieb. Bilder, Videos, und Programmcode vom Wettbewerb 
 
-## ASURO Anwenderseiten<vspace>
+## ASURO Anwenderseiten
 
 *   [www.subms.de][27] - Seite von RN-User Andun. Tipps zum Aufbau und zur Nutzung eines Neigungswinkelsensors am Asuro. 
 *   <http://home.kpn.nl/h.van.winkoop/Asuro/AsuMaiPagFrm.htm> - Seite von RN-User ArexxHenk. Einige Asuro Programme ohne Asuro Library. Asuro macht Musik, RC5 Control, etc. 
@@ -47,17 +47,17 @@ ASURO Links <vspace>
 *   [www.menaceweb.de][34] - Seite von Dennis Schuster, IR Remote Programm 
 *   [www.planetswebdesign.de][35] - Seite von Sebastian Prehn, Asuro mit SRF04, Videos 
 *   <http://www.ulrichc.de/project/cu-test-bot/index_de.html> - Seite von RN-User UlrichC, CU-TEST-BOT Asuro Platine auf CCRP5 Plattform 
-*   <http://home.arcor.de/winold.doege/index.htm> - Seite von RN-User Winne, Bilder, Videos, C-Code <vspace>
+*   <http://home.arcor.de/winold.doege/index.htm> - Seite von RN-User Winne, Bilder, Videos, C-Code 
 
-## ASURO in englisch<vspace>
+## ASURO in englisch
 
 *   <http://mattsasuroblog.blogspot.com/> - Matts Asuroblog 
 *   <http://www.jc.edu/academics/Robotics/2006/jmeiding/index.htm> - Asuro by Josh Meidinger 
-*   <http://www.jc.edu/academics/Robotics/2006/ASURO%27s%20website%5Fjabrizue/index.htm> - Asuro by Javier Brizuela <vspace>
+*   <http://www.jc.edu/academics/Robotics/2006/ASURO%27s%20website%5Fjabrizue/index.htm> - Asuro by Javier Brizuela 
 
-## ASURO Videos & Bilder<vspace>
+## ASURO Videos & Bilder
 
-Es gibt inzwischen eine Menge Videos vom ASURO in Aktion auf [Youtube][36] und [Google Video][37]. Einfach mal dort nach Asuro suchen. Ein paar besonders empfehlenswerte Videos sind: <vspace>
+Es gibt inzwischen eine Menge Videos vom ASURO in Aktion auf [Youtube][36] und [Google Video][37]. Einfach mal dort nach Asuro suchen. Ein paar besonders empfehlenswerte Videos sind: 
 
 *   [Balancing ASURO][38] 
 *   [ASURO IR-gesteuert mit Wegspeicherung][39] 
@@ -66,27 +66,27 @@ Es gibt inzwischen eine Menge Videos vom ASURO in Aktion auf [Youtube][36] und [
 *   [ASURO Schwarm][42] - echt schräg die Trompete 
 *   [ASURO im Labyrinth][43] 
 *   Meine [Video Sammlung][44] auf Youtube 
-*   Meine [Asuro Gallery][45] auf Flickr <vspace>
+*   Meine [Asuro Gallery][45] auf Flickr 
 
-## Atmel AVR<vspace>
+## Atmel AVR
 
-*   [Atmel AVR 8-Bit RISC Family][46] <vspace>
+*   [Atmel AVR 8-Bit RISC Family][46] 
 
-## Elektronik<vspace>
+## Elektronik
 
 *   [www.elektronik-kompendium.de][47] - Elko, Das Elektronik Kompendium 
 *   [www.elektronik-kurs.de][48] - Elektronik-Kurs Online und zum Download 
 *   [www.elektronik.de.vu][49] 
-*   [www.elektronik-kompendium.de/public/schaerer][50] - Schaerers Elektronik-Minikurse <vspace>
+*   [www.elektronik-kompendium.de/public/schaerer][50] - Schaerers Elektronik-Minikurse 
 
-## Robotik Allgemein<vspace>
+## Robotik Allgemein
 
 *   [Roboternetz][51] - Das größte deutschsprachige Roboter Forum 
 *   [Roboternetz Wissen][52] 
 *   [TU Chemnitz - Robotik AG][53] 
-*   [Roboter Bücher bei Amazon][54] <vspace>
+*   [Roboter Bücher bei Amazon][54] 
 
-## Bezugsquellen Bausätze & Elekronik<vspace>
+## Bezugsquellen Bausätze & Elekronik
 
 *   [brazer.net][55] - Roboter, Bausätze, Bauteile, Zubehör 
 *   [Conrad][56] 
@@ -94,12 +94,12 @@ Es gibt inzwischen eine Menge Videos vom ASURO in Aktion auf [Youtube][36] und [
 *   [E-Robotix][58] - Erweiterungen und Bausätze für den Asuro 
 *   [Ja-Ri-TEC][59] 
 *   [Reichelt Elektronik][60] 
-*   [Wissenschaft Online][61] <vspace>
+*   [Wissenschaft Online][61] 
 
-## Bezugsquellen Bücher<vspace>
+## Bezugsquellen Bücher
 
 *   [Einkaufen bei Amazon][62] 
-*   [Wissenschaft Online][61] <vspace>
+*   [Wissenschaft Online][61] 
 
  [12]: http://www.arexx.com
  [13]: http://www.roboternetz.de/wissen/index.php/Asuro

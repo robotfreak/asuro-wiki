@@ -1,24 +1,24 @@
 # Impressum
 
 Dies ist eine private Seite ohne jedes kommerzielles Interesse.   
-Verantwortlich in Sachen des Inhaltes und als Webmaster von [www.asurowiki.de][1] und [www.robotfreak.de/blog][2] ist: <vspace> 
+Verantwortlich in Sachen des Inhaltes und als Webmaster von [www.asurowiki.de][1] und [www.robotfreak.de/blog][2] ist:  
 
-</table> <vspace>
-### E-Mail: <vspace>
+</table> 
+### E-Mail: 
 
 webmaster [at] asurowiki [dot] de  
 
 
-### Internet: <vspace>
+### Internet: 
 
 *   [www.asurowiki.de][1] 
-*   [www.robotfreak.de/blog][2] <vspace>
+*   [www.robotfreak.de/blog][2] 
 
-### Datenschutz:<vspace>
+### Datenschutz:
 
-Gemäß § 28 Bundesdatenschutzgesetz widerspreche ich der Verarbeitung, Nutzung oder Übermittlung meiner persönlichen Daten für Zwecke der Werbung, Markt- oder Meinungsforschung! <vspace>
+Gemäß § 28 Bundesdatenschutzgesetz widerspreche ich der Verarbeitung, Nutzung oder Übermittlung meiner persönlichen Daten für Zwecke der Werbung, Markt- oder Meinungsforschung! 
 
-### Rechtlicher Hinweis / Nutzungsbedingungen:<vspace>
+### Rechtlicher Hinweis / Nutzungsbedingungen:
 
 Bitte beachten sie dazu den [Haftungsausschluss/Disclaimer][4]
 

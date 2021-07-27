@@ -1,17 +1,17 @@
 # RS232Wandler
 
 ![][1]  
-RS232-Modul [Dieses Bild bei Flickr][2]<vspace>
+RS232-Modul [Dieses Bild bei Flickr][2]
 
-Für das Asuro Eval Board und die Asuro Erweiterung kann dieses RS232 Pegelwandler Modul verwendet werden. Es wandelt die 5Volt TTL Signale der Mikroprozessor UART in RS232 kompatible Signalbereiche von -12V..+12V. Über dieses Modul kann der ASURO mit der COM Schnittstelle eines PCs verbunden werden. (Auf keinen Fall sollte man dies ohne Pegelwandler Modul durchführen) Das RS232 Modul besteht aus dem üblichen MAX232/202 Pegelwandler Chip. Die Werte für die Kondensatoren C1..C4 hängen vom verwendeten Wandler Chip ab. Beim MAX202 reichen z.B. schon 0.1µF Kondensatoren aus. <vspace>
+Für das Asuro Eval Board und die Asuro Erweiterung kann dieses RS232 Pegelwandler Modul verwendet werden. Es wandelt die 5Volt TTL Signale der Mikroprozessor UART in RS232 kompatible Signalbereiche von -12V..+12V. Über dieses Modul kann der ASURO mit der COM Schnittstelle eines PCs verbunden werden. (Auf keinen Fall sollte man dies ohne Pegelwandler Modul durchführen) Das RS232 Modul besteht aus dem üblichen MAX232/202 Pegelwandler Chip. Die Werte für die Kondensatoren C1..C4 hängen vom verwendeten Wandler Chip ab. Beim MAX202 reichen z.B. schon 0.1µF Kondensatoren aus. 
 
-### Schaltplan <vspace>
+### Schaltplan 
 
-![][3]<vspace>
+![][3]
 
-### Steckerbelegung<vspace>
+### Steckerbelegung
 
-Die Steckerbelegung des 6poligen Steckbverbinders ist diesselbe wie beim [Bluetooth Modul][4]. <vspace>
+Die Steckerbelegung des 6poligen Steckbverbinders ist diesselbe wie beim [Bluetooth Modul][4]. 
 
 | **Pin** | **Name** | **Beschreibung**                                             |
 ||
@@ -20,24 +20,24 @@ Die Steckerbelegung des 6poligen Steckbverbinders ist diesselbe wie beim [Blueto
 | 3       | GND      | Ground                                                       |
 | 4       | RX-O     | Transmit Output. TTL Pegel. Verbunden mit RX des Controllers |
 | 5       | TX-I     | Receive Input. TTL Pegel. Verbunden mit TX des Controllers   |
-| 6       | RTS      | Ready To Send                                                |<vspace>
+| 6       | RTS      | Ready To Send                                                |
 
-Der 3polige PSK Stecker führt neben RxD und TxD mit RS232 Pegel nur noch GND als Massesignal. <vspace>
+Der 3polige PSK Stecker führt neben RxD und TxD mit RS232 Pegel nur noch GND als Massesignal. 
 
 | **Pin** | **Name** | **Beschreibung**                                                        |
 ||
 | 1       | TX-O     | Transmit Output. RS232 Pegel. Verbunden mit Pin2 (RxD) der D-SUB Buchse |
 | 2       | GND      | Ground. Verbunden mit Pin5 der D-SUB Buchse                             |
-| 3       | RX-I     | Receive Input. RS232 Pegel. Verbunden mit Pin3 (TxD) der D-SUB Buchse   |<vspace>
+| 3       | RX-I     | Receive Input. RS232 Pegel. Verbunden mit Pin3 (TxD) der D-SUB Buchse   |
 
-Zum Anschluß an den PC ist zudem noch ein 3adriges Kabel notwendig. Auf der einen Seite wird die 3polige PSK Buchse angecrimpt (oder eine 3polige Buchsenleiste angelötet). Auf der anderen Seite wird an das Kabel dann eine 9-polige D-SUB Buchse angelötet. <vspace>
+Zum Anschluß an den PC ist zudem noch ein 3adriges Kabel notwendig. Auf der einen Seite wird die 3polige PSK Buchse angecrimpt (oder eine 3polige Buchsenleiste angelötet). Auf der anderen Seite wird an das Kabel dann eine 9-polige D-SUB Buchse angelötet. 
 
-![][5]<vspace>
+![][5]
 
-## Weblinks<vspace>
+## Weblinks
 
 *   [Wikipedia][6] EIA-RS232 Artikel 
-*   [RN-Wissen][7] - RS232 Artikel <vspace>
+*   [RN-Wissen][7] - RS232 Artikel 
 
  [1]: http://farm3.static.flickr.com/2275/2129824702_93e4c68df2_b.jpg ""
  [2]: http://www.flickr.com/photos/hmblgrmpf/2129823200/

@@ -1,9 +1,9 @@
 # Prozessor
 
 ![][1]  
-*AVR ATmega8*<vspace>
+*AVR ATmega8*
 
-Das 'Gehirn' des ASURO ist der AVR 8-Bit RISC Prozessor [ATmega8L][2] von [Atmel][3]. <vspace>
+Das 'Gehirn' des ASURO ist der AVR 8-Bit RISC Prozessor [ATmega8L][2] von [Atmel][3]. 
 
 *   8 kByte Flash Programmspeicher. Bis zu 10000 mal beschreibbar. (1 kByte vom [Bootloader][4] belegt. 7 kByte sind für Anwenderprogramme verfügbar.) 
 *   1 kByte SRAM. 
@@ -11,21 +11,21 @@ Das 'Gehirn' des ASURO ist der AVR 8-Bit RISC Prozessor [ATmega8L][2] von [Atmel
 *   6 10-bit A/D-Wandler. 
 *   Bis zu 8 MIPS Durchsatz bei 8 Mhz Takt. 
 *   2.7 - 5.5 Volt Betriebsspannung. 
-*   28-Pin PDIP Gehäuse. <vspace>
+*   28-Pin PDIP Gehäuse. 
 
-## ATmega8 Pinbelegung<vspace>
+## ATmega8 Pinbelegung
 
 ![][5]  
-*AVR ATmega8 Pinbelegung*<vspace>
+*AVR ATmega8 Pinbelegung*
 
-## ATmega8 Blockschaltbild<vspace>
+## ATmega8 Blockschaltbild
 
 ![][6]  
-*AVR ATmega8 Blockdiagramm*<vspace>
+*AVR ATmega8 Blockdiagramm*
 
-## ASURO Portbelegung<vspace>
+## ASURO Portbelegung
 
-Der AVR ATmega8 Prozessor verfügt über insgesamt 23 verfügbare Ein-/Ausgabe Ports, davon können 6 A/D Wandler Ports. Alle Ports sind in 8er Gruppen zusammengefaßt zu Port B, C und D. Viele der Ports haben dabei neben der Funktion als Ein-/ Ausgang auch Sonderfunktionen, wie z.B. UART, PWM, I2C oder SPI Funktionen. So werden beim Asuro 2 Ports für den externen Quarz benötigt, dazu kommt noch der Reset Pin, der zu nichts anderem verwendet werden kann. Dadurch reduziert sich die vefügbare Portanzahl auf 20. Alle verfügbaren Ports sind beim Asuro belegt. Um Erweiterungen benutzen zu können, muß man deshalb auf etwas vorhandenes verzichten. Im konkreten Fall auf den [Linienfolger][7]. Läßt man dazu die beiden Fototransistoren und die Front LED weg, hat man 2 A/D Ports und 1 Digitalport frei. Zudem liegen noch die rote Status LED und das 36kHz Trägersignal für die IR Sende LED auf einem Steckverbinder, und können mit Einschränkungen für Erweiterungen verwendet werden. <vspace>
+Der AVR ATmega8 Prozessor verfügt über insgesamt 23 verfügbare Ein-/Ausgabe Ports, davon können 6 A/D Wandler Ports. Alle Ports sind in 8er Gruppen zusammengefaßt zu Port B, C und D. Viele der Ports haben dabei neben der Funktion als Ein-/ Ausgang auch Sonderfunktionen, wie z.B. UART, PWM, I2C oder SPI Funktionen. So werden beim Asuro 2 Ports für den externen Quarz benötigt, dazu kommt noch der Reset Pin, der zu nichts anderem verwendet werden kann. Dadurch reduziert sich die vefügbare Portanzahl auf 20. Alle verfügbaren Ports sind beim Asuro belegt. Um Erweiterungen benutzen zu können, muß man deshalb auf etwas vorhandenes verzichten. Im konkreten Fall auf den [Linienfolger][7]. Läßt man dazu die beiden Fototransistoren und die Front LED weg, hat man 2 A/D Ports und 1 Digitalport frei. Zudem liegen noch die rote Status LED und das 36kHz Trägersignal für die IR Sende LED auf einem Steckverbinder, und können mit Einschränkungen für Erweiterungen verwendet werden. 
 
 | **Port** | ** Pin** | **I/O**      | **Funktion**                     | **Anmerkung**                 |
 ||
@@ -53,11 +53,11 @@ Der AVR ATmega8 Prozessor verfügt über insgesamt 23 verfügbare Ein-/Ausgabe P
 | PD4      | 6        | Output       | vorwärts/rückwärts linker Motor         | Â                              |
 | PD5      | 11       | Output       | vorwärts/rückwärts linker Motor         | Â                              |
 | PD6      | 12       | Output       | Front LED unten                  | für Erweiterung*                   |
-| PD7      | 13       | Output/Input | Umschaltung Odometrie/Back LED   | Â                              |<vspace>
+| PD7      | 13       | Output/Input | Umschaltung Odometrie/Back LED   | Â                              |
 
-(*) bei Verwendung dieser Ports auf der Erweiterungsplatine, muß auf den Linienverfolger verzichtet werden. Man kann aber die entsprechenden Bauteile entfernen und für das [Linienverfolger Modul][8] alternativ zur Erweiterungsplatine verwenden. <vspace>
+(*) bei Verwendung dieser Ports auf der Erweiterungsplatine, muß auf den Linienverfolger verzichtet werden. Man kann aber die entsprechenden Bauteile entfernen und für das [Linienverfolger Modul][8] alternativ zur Erweiterungsplatine verwenden. 
 
-## Weiterführende Links:<vspace>
+## Weiterführende Links:
 
 *   [Atmel][3] 
 *   [ATmega8L][2] 

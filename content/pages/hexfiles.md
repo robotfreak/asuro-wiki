@@ -1,6 +1,6 @@
 # AsuroHexfiles
 
-Ein Hexfile dient zum Speichern von binären Daten in einem Textfile. In Hexfiles beginnt jede Zeile mit einem ':' gefolgt von einer variablen Anzahl von hexadezimal kodierten Bytes. In den Hexfiles des Asuro treten nur 2 der 6 möglichen Typen aus der *Intel Hexadecimal Object File Format Specification* auf, *Datensatz* und *Dateiende*. <vspace>
+Ein Hexfile dient zum Speichern von binären Daten in einem Textfile. In Hexfiles beginnt jede Zeile mit einem ':' gefolgt von einer variablen Anzahl von hexadezimal kodierten Bytes. In den Hexfiles des Asuro treten nur 2 der 6 möglichen Typen aus der *Intel Hexadecimal Object File Format Specification* auf, *Datensatz* und *Dateiende*. 
 
 ## Datensatz
 
@@ -16,7 +16,7 @@ Ein Hexfile dient zum Speichern von binären Daten in einem Textfile. In Hexfile
 Berechnung der Prüfsumme: uint8_t R[],P,L;Â  uint16_t u;  
   
 for(P=,L=R[1],u=1; u<=(4+L); ++u)Â    
-Â  P-=R[u];<vspace>
+Â  P-=R[u];
 
 ## Dateiende
 
@@ -25,7 +25,7 @@ for(P=,L=R[1],u=1; u<=(4+L); ++u)Â
 | 1    | '00'   |
 | 2..3 | '0000' |
 | 4    | '01'   | ["Dateiende"] |
-| 5    | 'FF'   | [Prüfsumme]        |<vspace>
+| 5    | 'FF'   | [Prüfsumme]        |
 
 ## Beispiel eines Asuro-Hexfiles
 
@@ -49,13 +49,13 @@ Ausschnitt eines Asuro-Hexfiles (links Original, rechts aufgeschlüsselt ohne Da
     :020684000A006A                                      : 02 0684 00 ..... 6A
     :00000001FF                                          : 00 0000 01       FF
     
-    <vspace>
+    
 
-## Weiterführende Links<vspace>
+## Weiterführende Links
 
 *   <http://en.wikipedia.org/wiki/Intel_HEX> - *Intel Hexadecimal Object File Format* 
 *   <http://avr.jassenbaum.de/ja-tools/acxutil.html> - Ascii Coded heX Utility (*view, edit, compare and convert* für Hexfiles) 
-*   <http://avr.jassenbaum.de/ja-tools/reavr.html> - Reassembler for AVR (Generiert asm-Quelltext direkt aus AVR-Hexfile)  ![][1]  <vspace>
+*   <http://avr.jassenbaum.de/ja-tools/reavr.html> - Reassembler for AVR (Generiert asm-Quelltext direkt aus AVR-Hexfile)  ![][1]  
 
 *Disassemblieren mittels Send To*
 

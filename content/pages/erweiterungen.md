@@ -1,7 +1,7 @@
 # Erweiterungen
 
 ![][1]  
-*ASURO Erweiterungen*<vspace>
+*ASURO Erweiterungen*
 
 *   [Asuro Erweiterung mit RS232/Bluetooth und ISP][2] 
 *   [Bluetooth Modem][3] für das [Asuro Eval Board][4] und die [Asuro Erweiterung][2] 
@@ -12,16 +12,16 @@
 *   [MineSweeper][10], der Asuro als Schatzsucher 
 *   [SnakeVision][11] aus dem Buch [Mehr Spass Mit Asuro Band 2][12] 
 *   [Ultraschallsensoren am Eval Board][13] - Devantech und Maxbotix Module 
-*   [Ultraschall Entfernungsmesser][14] - Aus dem Buch [Mehr Spass Mit Asuro Band 1][15] <vspace>
+*   [Ultraschall Entfernungsmesser][14] - Aus dem Buch [Mehr Spass Mit Asuro Band 1][15] 
 
-## Weblinks<vspace>
+## Weblinks
 
 *   [Roboternetz Thread][16] - ASURO eigene Erweiterung mit [ATmega32][17], RS232 und ISP 
 *   [www.gsf-robot-contest.de][18] - Gesamtschule Fröndenberg, Erweiterungsplatine für den Asuro (2x IR Entfernungssensor, 3x Liniensensor, Transportfach mit Lichtschranke) 
 *   [www.tu-harburg.de][19] - TU Hamburg Harburg, Erweiterungsplatine für den Asuro (Neigungssensor) 
 *   [subms.de][20] - Näheres zur Neigungswinkel Sensorplatine für den Asuro 
 *   [Roboterclub Freiburg][21] - Bluetooth Asuro, Sumo Adapter 
-*   [E-Robotix][22] - Webshop für Erweiterungen und Bausätze für den Asuro <vspace>
+*   [E-Robotix][22] - Webshop für Erweiterungen und Bausätze für den Asuro 
 
  [1]: http://www.asurowiki.de/pmwiki/uploads/Main/collage_exp.jpg ""
  [2]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/AsuroErweiterung

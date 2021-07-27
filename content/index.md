@@ -2,17 +2,22 @@
 
 ## Auf- und Zusammenbau
 
-Eine Einführung in die Elektronik und die Programmierung mit Arduino.
+Eine Einführung in die Zusammenbau und den Aufbau des Asuros.
+  * [Zusammenbau](%base_url%?pages/zusammenbau)
+  * [Aufbau](%base_url%?pages/aufbau)
+
 
 ## Modifikationen und Erweiterungen
 
-Eine Liste der wichtigsten Arduino Boards und deren Eigenschaften
+Eine Liste von Modifikation und Erweiterungen des Asuros
+  * [Modifikation](%base_url%?pages/modifikationen)
+  * [Erweiterungen](%base_url%?pages/erweiterungen)
+
 
 ## Programmierung
 
-Eine Liste von Arduino Shields.
+Programmierung des Asuros
+  * [Programmierung](%base_url%?pages/programmierung.md)
+  * [Asuro Bibliothek](%base_url%?pages/bibliothek.md)
 
-## Module
-
-Eine Liste von Modulen.
 

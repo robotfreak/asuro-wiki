@@ -1,25 +1,25 @@
 # Tasten
 
 ![][1]  
-*Taster*<vspace>
+*Taster*
 
-## Funktionsweise<vspace>
+## Funktionsweise
 
-Die Taster K1..K6 an der Vorderseite des ASURO gehen an den Prozessor Pin PC4. Dieser ist als A/D Port initialisiert. Durch die verschiedenen Widerstandswerte ergibt sich je nach gedrückter Tastenkombination ein anderer A/D Wert. Die Werte der Widerstände sind so gewählt, das sich der Widerstandswert sich von Taste zu Taste verdoppelt. Analog dazu verdoppelt sich die gemessene Spannung am A/D Port. Der Spannungsteiler wird nicht, wie man vielleicht vermuten könnte mit dem 1MOhm Widerstand R23 gebildet, sondern mit dem 1kOhm Widerstand R24. Dazu wird vor jeder Messung in der PollSwitch Funktion der Prozessor Pin PD3 auf HIGH und damit auf Versorgungsspannungs Pegel gelegt. <vspace>
+Die Taster K1..K6 an der Vorderseite des ASURO gehen an den Prozessor Pin PC4. Dieser ist als A/D Port initialisiert. Durch die verschiedenen Widerstandswerte ergibt sich je nach gedrückter Tastenkombination ein anderer A/D Wert. Die Werte der Widerstände sind so gewählt, das sich der Widerstandswert sich von Taste zu Taste verdoppelt. Analog dazu verdoppelt sich die gemessene Spannung am A/D Port. Der Spannungsteiler wird nicht, wie man vielleicht vermuten könnte mit dem 1MOhm Widerstand R23 gebildet, sondern mit dem 1kOhm Widerstand R24. Dazu wird vor jeder Messung in der PollSwitch Funktion der Prozessor Pin PD3 auf HIGH und damit auf Versorgungsspannungs Pegel gelegt. 
 
-Über den Prozessor Port PD2 kann durch das Drücken einer Taste auch ein Interrupt ausgelöst werden. Das ist normalerweise überflüssig, das Programm sollte die Taster genügend oft abfragen können. Genausogut gibt es die Möglichkeit den A/D-Wandler Interrupt zu nutzen, um bei erfolgter Wandlung den Wert der Taster in einer globalen Variable abzulegen. <vspace>
+Über den Prozessor Port PD2 kann durch das Drücken einer Taste auch ein Interrupt ausgelöst werden. Das ist normalerweise überflüssig, das Programm sollte die Taster genügend oft abfragen können. Genausogut gibt es die Möglichkeit den A/D-Wandler Interrupt zu nutzen, um bei erfolgter Wandlung den Wert der Taster in einer globalen Variable abzulegen. 
 
-Die PollSwitch() Funktion der Asuro.c Bibliothek sollte folgende Werte für die einzelnen Tasten liefern. <vspace>
+Die PollSwitch() Funktion der Asuro.c Bibliothek sollte folgende Werte für die einzelnen Tasten liefern. 
 
-K1 = 32, K2 = 16, K3 = 8, K4 = 4, K5 = 2, K6 = 1 <vspace>
+K1 = 32, K2 = 16, K3 = 8, K4 = 4, K5 = 2, K6 = 1 
 
-Aufgrund der Toleranzen können diese Werte von ASURO zu ASURO schwanken und sollten deshalb einmalig mit einem [Testprogramm][2] ausgelesen und die PollSwitch() Funktion entsprechend geändert werden. <vspace>
+Aufgrund der Toleranzen können diese Werte von ASURO zu ASURO schwanken und sollten deshalb einmalig mit einem [Testprogramm][2] ausgelesen und die PollSwitch() Funktion entsprechend geändert werden. 
 
-Ab der Version 2.70RC3 der [Asuro Lib][3] wird der Korrekturwert für die Tastsensoren in der Datei [myasuro.h][4] abgelegt. Mit Hilfe eines Testprogrammes von RN-User sternthaler kann dieser Wert nun auch automatisch ermittelt werden. Hierzu gibt es auch einen Thread im [Roboternetz Forum][5] mit den benötigten Testprogrammen. <vspace>
+Ab der Version 2.70RC3 der [Asuro Lib][3] wird der Korrekturwert für die Tastsensoren in der Datei [myasuro.h][4] abgelegt. Mit Hilfe eines Testprogrammes von RN-User sternthaler kann dieser Wert nun auch automatisch ermittelt werden. Hierzu gibt es auch einen Thread im [Roboternetz Forum][5] mit den benötigten Testprogrammen. 
 
-## Programmierung<vspace>
+## Programmierung
 
-Eine gemittelte Messreihe der reinen A/D Werte für meine beiden Asuros sieht z.B. so aus: <vspace> 
+Eine gemittelte Messreihe der reinen A/D Werte für meine beiden Asuros sieht z.B. so aus:  
 
 | **Taste** | **Asuro 1** | **Asuro 2** | **Spannung** |
 ||
@@ -29,11 +29,11 @@ Eine gemittelte Messreihe der reinen A/D Werte für meine beiden Asuros sieht z.
 | K4        | 964         | 963         | 4,81V        |
 | K3        | 910         | 910         | 4,55V        |
 | K2        | 816         | 815         | 4,07V        |
-| K1        | 676         | 676         | 3,38V        |<vspace>
+| K1        | 676         | 676         | 3,38V        |
 
-Hier unterscheiden sich die gemessenen Werte zwischen den beiden Asuros nur unerheblich. Die Werte bleiben auch bei sinkender Versorgungungsspannung stabil. <vspace>
+Hier unterscheiden sich die gemessenen Werte zwischen den beiden Asuros nur unerheblich. Die Werte bleiben auch bei sinkender Versorgungungsspannung stabil. 
 
-### PollSwitch Funktion<vspace>
+### PollSwitch Funktion
 
 unsigned char PollSwitch (void)  
 {  
@@ -73,35 +73,35 @@ unsigned char PollSwitch (void)
 Â  Â  Wert 61L evtl. anpasssen, falls fuer K1 falsche Werte zurueckgegebn werden.  
 Â  */  
 Â  return ((10240000L / (long)i - 10000L) * MY\_SWITCH\_VALUE + 5000L) / 10000;  
-}<vspace>
+}
 
-In der PollSwitch Funktion wird die Versorgungsspannung als Referenzspannung verwendet. Aus der Referenzspannung von 5V und der Auflösung des A/D Wandler (hier 10Bit, entsprechend 1024 Werte) ergibt das eine theoretische Auflösung des Wandlers von ca. 5mV. <vspace>
+In der PollSwitch Funktion wird die Versorgungsspannung als Referenzspannung verwendet. Aus der Referenzspannung von 5V und der Auflösung des A/D Wandler (hier 10Bit, entsprechend 1024 Werte) ergibt das eine theoretische Auflösung des Wandlers von ca. 5mV. 
 
-## Probleme mit Tastern und deren Lösung<vspace>
+## Probleme mit Tastern und deren Lösung
 
-Stimmt die Ausgabe nicht mit den o. a. Werten überein liegt evtl. ein Fehler vor. <vspace>
+Stimmt die Ausgabe nicht mit den o. a. Werten überein liegt evtl. ein Fehler vor. 
 
-### Es wird immer ein Wert ausgegeben, obwohl keine Taste gedrückt wurde<vspace>
+### Es wird immer ein Wert ausgegeben, obwohl keine Taste gedrückt wurde
 
-Wichtig ist das zweimalige Abfragen der PollSwitch() Funktion und der anschließende Vegleich ob beidesmal der gleiche Wert zurückgegeben wurde. Ansonsten liegt ein Kurzschluß an dem entsprechenden Taster oder dem zugehörigen Widerstand vor. <vspace>
+Wichtig ist das zweimalige Abfragen der PollSwitch() Funktion und der anschließende Vegleich ob beidesmal der gleiche Wert zurückgegeben wurde. Ansonsten liegt ein Kurzschluß an dem entsprechenden Taster oder dem zugehörigen Widerstand vor. 
 
-### Die ausgegebenen Werte sind vertauscht<vspace>
+### Die ausgegebenen Werte sind vertauscht
 
-Die den Tastern zugeordneten Widerständen wurden verwechselt. <vspace>
+Die den Tastern zugeordneten Widerständen wurden verwechselt. 
 
-### Die ausgegebenen Werte für K1, K2, K3 stimmen nicht<vspace>
+### Die ausgegebenen Werte für K1, K2, K3 stimmen nicht
 
-Manchmal werden abweichende Werte für K1 (31 oder 33) bzw K2 (15 oder 17) bzw. K3 (7 oder 9) beim Testprogramm ausgegeben. Das Problem läßt sich durch Anpassung der asuro.c Bibliothek beheben. Die letzte Zeile in der PollSwitch() Funktion lautet: <vspace>
+Manchmal werden abweichende Werte für K1 (31 oder 33) bzw K2 (15 oder 17) bzw. K3 (7 oder 9) beim Testprogramm ausgegeben. Das Problem läßt sich durch Anpassung der asuro.c Bibliothek beheben. Die letzte Zeile in der PollSwitch() Funktion lautet: 
 
-return ((10240000L/(long)i-10000L)*MY\_SWITCH\_VALUEL+5000L)/10000;<vspace>
+return ((10240000L/(long)i-10000L)*MY\_SWITCH\_VALUEL+5000L)/10000;
 
-Den Wert MY\_SWITCH\_VALUE in der myasuro.h probeweise mit 62L, 63L, 64L oder 65L ersetzen und jeweils damit die Asuro Lib und dann das Testprogramm neu übersetzen und ausprobieren. Einfacher geht es mit dem Tool von Sternthaler aus dem [Roboternetz Forum][5]. Allerdings nur für Windows. Der Asuro kann den Wert aber auch gleich selbst ermitteln wie im folgenden [Kalibrier Testprogramm][6]. <vspace>
+Den Wert MY\_SWITCH\_VALUE in der myasuro.h probeweise mit 62L, 63L, 64L oder 65L ersetzen und jeweils damit die Asuro Lib und dann das Testprogramm neu übersetzen und ausprobieren. Einfacher geht es mit dem Tool von Sternthaler aus dem [Roboternetz Forum][5]. Allerdings nur für Windows. Der Asuro kann den Wert aber auch gleich selbst ermitteln wie im folgenden [Kalibrier Testprogramm][6]. 
 
-### Es wird nach drücken einer Tasten noch ein paar mal der Wert 1 ausgegeben.<vspace>
+### Es wird nach drücken einer Tasten noch ein paar mal der Wert 1 ausgegeben.
 
-Die PollSwitch() Funktion wird im obigen Programm insgesamt 8x ausgeführt. Das sollte normalerweise reichen den Kondensator C7 vollständig zu entladen und genau dieses Problem verhindern. Eventuell muß die PollSwitch() Funktion noch öfter aufgerufen werden. <vspace>
+Die PollSwitch() Funktion wird im obigen Programm insgesamt 8x ausgeführt. Das sollte normalerweise reichen den Kondensator C7 vollständig zu entladen und genau dieses Problem verhindern. Eventuell muß die PollSwitch() Funktion noch öfter aufgerufen werden. 
 
-## Weiterführende Links:<vspace>
+## Weiterführende Links:
 
 *   [Roboternetz Thread][7] - Asuro Schalterproblem gelöst 
 *   [Roboternetz Thread][5] - ASURO emittelt Werte für Lib V2.70 myasuro.h selber

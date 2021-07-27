@@ -1,110 +1,110 @@
 # Neuigkeiten
 
-Neuigkeiten auf ASURO Wiki. <vspace>
+Neuigkeiten auf ASURO Wiki. 
 
 ### Oktober 2013
 
-*   [Asurino][1] V0.3. Angepasst an Arduino IDE v1.x, steht auf [Sourceforge][2] zum Download bereit. <vspace>
+*   [Asurino][1] V0.3. Angepasst an Arduino IDE v1.x, steht auf [Sourceforge][2] zum Download bereit. 
 
 ### November 2010
 
-*   Asuro Erweiterung [MineSweeper][3] <vspace>
+*   Asuro Erweiterung [MineSweeper][3] 
 
 ### Juni 2009 
 
 *   Neue Asuro Erweiterung. [I2C Analog Porterweiterung][4] 
 *   Video für die [Ultraschallerweiterung][5] 
-*   Video für die [LCD Erweiterung][6] <vspace>
+*   Video für die [LCD Erweiterung][6] 
 
 ### März 2008
 
 *   Die [ASURO Bibliothek][7] V2.80rc1 steht auf [Sourceforge][8] zum Download bereit. 
-*   Die [ASURO Bibliothek][7] V2.71 gibt es jetzt als Bundle zusammen mit dem AsuroFlash Tool auf [Sourceforge][9]. Das AsuroFlash Tool ist eine Entwicklungsumgebung für den Asuro mit Editor, WinAVR Einbindung, Terminal und Oszilloskop für Windows Betriebssysteme. <vspace>
+*   Die [ASURO Bibliothek][7] V2.71 gibt es jetzt als Bundle zusammen mit dem AsuroFlash Tool auf [Sourceforge][9]. Das AsuroFlash Tool ist eine Entwicklungsumgebung für den Asuro mit Editor, WinAVR Einbindung, Terminal und Oszilloskop für Windows Betriebssysteme. 
 
 ### Februar 2008
 
-*   [Asurino][1] V0.2, die Arduino Bibliothek für den Asuro, steht auf [Sourceforge][10] zum Download bereit. Jetzt ist auch eine IR Kommunikation mit Original Asuros ohne Umbau möglich. <vspace>
+*   [Asurino][1] V0.2, die Arduino Bibliothek für den Asuro, steht auf [Sourceforge][10] zum Download bereit. Jetzt ist auch eine IR Kommunikation mit Original Asuros ohne Umbau möglich. 
 
 ### Januar 2008
 
-*   [Asurino][1] V0.1, die Arduino Bibliothek für den Asuro, wurde veröffentlicht. <vspace>
+*   [Asurino][1] V0.1, die Arduino Bibliothek für den Asuro, wurde veröffentlicht. 
 
 ### Dezember 2007
 
 *   [Asuro Erweiterung mit RS232/Bluetooth und ISP][11] 
-*   [Kalibrier Testprogramm][12] für die Tastsensoren <vspace>
+*   [Kalibrier Testprogramm][12] für die Tastsensoren 
 
-### November 2007<vspace>
+### November 2007
 
 *   Die [ASURO Bibliothek][7] V2.71 steht auf [Sourceforge][8] zum Download bereit. 
-*   [Asuro Gallery][13] auf Flickr eröffnet <vspace>
+*   [Asuro Gallery][13] auf Flickr eröffnet 
 
-### Juli 2007<vspace>
+### Juli 2007
 
 *   [Bootloader][14] Artikel 
 *   Artikel zur Projekterstellung unter [Eclipse][15], [AVR Studio][16] und [Programmers Notepad][17] 
-*   Artikel über die [Snake Vision][18] Erweiterung aus dem [2. ASURO Buch][19]. <vspace>
+*   Artikel über die [Snake Vision][18] Erweiterung aus dem [2. ASURO Buch][19]. 
 
-### April 2007<vspace>
+### April 2007
 
 *   eine weiterer release candidate der [ASURO Bibliothek][7] V2.70RC3 steht zum Download bereit. 
 *   Artikel über [Asuro Hexfiles][20] und [C Syntax Check][21] von HermannSW sind dazugekommen. 
-*   Vorstellung des [2. ASURO Buch][19] <vspace>
+*   Vorstellung des [2. ASURO Buch][19] 
 
-### Februar 2007<vspace>
+### Februar 2007
 
 *   eine weiterer release candidate der [ASURO Bibliothek][7] V2.70RC2 steht zum Download bereit. 
 *   Die [LCD Erweiterung][6]. Anschluß eines LCD-Moduls über I2C mit dem PCF8574. Mit Source Library. 
-*   Der [Zusammenbau][22] des ASURO. Bebilderte Anleitung mit Tips zu Modifikationen schon während des Aufbaus. <vspace>
+*   Der [Zusammenbau][22] des ASURO. Bebilderte Anleitung mit Tips zu Modifikationen schon während des Aufbaus. 
 
-### Januar 2007<vspace>
+### Januar 2007
 
-*   eine neue Version der [ASURO Bibliothek][7] V2.70RC1 steht vor der Veröffentlichung. Derzeit läuft die Beta-Phase. <vspace>
+*   eine neue Version der [ASURO Bibliothek][7] V2.70RC1 steht vor der Veröffentlichung. Derzeit läuft die Beta-Phase. 
 
-### November 2006<vspace>
+### November 2006
 
 *   Anschluß von [Ultraschallsensoren am Eval Board][23] 
 *   Umbau der Infrarot Schnittstelle zum [Infrarot Hindernisdetektor][24] für das [Asuro Eval Board][25] 
 *   Auch für die [ASURO Bibliothek][7] bei Sourceforge gibt es ein kleines Update in Form der Release 2.6.1. 
-*   Aufgrund von Performance und Erreichbarkeits Problemen mit sourceforge befindet sich die Asuro Bibliothek jetzt auch bei [gna.org][26]. Neue Release 3.0 sowie ein GTK Flasher Tool (für Linux) stehen zum Download bereit. <vspace>
+*   Aufgrund von Performance und Erreichbarkeits Problemen mit sourceforge befindet sich die Asuro Bibliothek jetzt auch bei [gna.org][26]. Neue Release 3.0 sowie ein GTK Flasher Tool (für Linux) stehen zum Download bereit. 
 
-### Oktober 2006<vspace>
+### Oktober 2006
 
-*   Das [Asuro Eval Board][25] mit [Bluetooth Modem][27] <vspace>
+*   Das [Asuro Eval Board][25] mit [Bluetooth Modem][27] 
 
-### August 2006<vspace>
+### August 2006
 
-*   [IR Transceiver Modifikation][28] <vspace>
+*   [IR Transceiver Modifikation][28] 
 
-### Juni 2006<vspace>
+### Juni 2006
 
-*   [Literatur Verzeichnis][29] erweitert <vspace>
+*   [Literatur Verzeichnis][29] erweitert 
 
-### Januar 2006<vspace>
+### Januar 2006
 
 *   Asuro Wiki ist umgezogen auf eine eigene Top-Level Domain [www.asurowiki.de][30]. 
 *   Der Bereich [Aufbau][31] wurde überarbeitet. 
-*   Syntax Highlighting bei den Programm Beispielen. <vspace>
+*   Syntax Highlighting bei den Programm Beispielen. 
 
-### Dezember 2005<vspace>
+### Dezember 2005
 
-*   Aus der [ASURO Bibliothek][7] ist ein Sourceforge Projekt entstanden. <vspace>
+*   Aus der [ASURO Bibliothek][7] ist ein Sourceforge Projekt entstanden. 
 
-### Oktober 2005<vspace>
+### Oktober 2005
 
-*   Update. kommentierte [ASURO Bibliothek][7] mit Beispielen V2.60 vom 07.10.2005 <vspace>
+*   Update. kommentierte [ASURO Bibliothek][7] mit Beispielen V2.60 vom 07.10.2005 
 
-### September 2005<vspace>
+### September 2005
 
 *   [I2C Porterweiterung][32] 
-*   [Beispiel- und Testprogramme in C][33] <vspace>
+*   [Beispiel- und Testprogramme in C][33] 
 
-### August 2005<vspace>
+### August 2005
 
 *   [LCD Erweiterung][6] mit AVR Butterfly 
-*   [Linienverfolger Modul][34] <vspace>
+*   [Linienverfolger Modul][34] 
 
-### Juli 2005<vspace>
+### Juli 2005
 
 *   ASURO Wiki geht online
 

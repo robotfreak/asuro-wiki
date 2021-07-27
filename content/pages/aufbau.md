@@ -1,11 +1,11 @@
 # Aufbau
 
-![](../images/asuro_oben.jpg)<vspace>
+![](../images/asuro_oben.jpg)
 
 
-## ASURO Aufbau<vspace>
+## ASURO Aufbau
 
-Die Platine für die Elektronik dient gleichzeitig als Chassis und Fahrgestell. Je 2 Achsen für die Getriebe und die Räder werden direkt auf die Platine gelötet. Als Stützrad dient ein halber TT-Ball, der mit Superkleber von unten auf die Platine geklebt wird. <vspace>
+Die Platine für die Elektronik dient gleichzeitig als Chassis und Fahrgestell. Je 2 Achsen für die Getriebe und die Räder werden direkt auf die Platine gelötet. Als Stützrad dient ein halber TT-Ball, der mit Superkleber von unten auf die Platine geklebt wird. 
 
 *   [Prozessor](prozessor.md). Atmel AVR 8-Bit RISC [ATmega8L][7]. 
 *   2 [Motorbrücken](motorbruecke.md). Diskret aufgebaut mit Transistoren. 
@@ -14,14 +14,14 @@ Die Platine für die Elektronik dient gleichzeitig als Chassis und Fahrgestell. 
 *   6 [Tasten][(tasten.md) als Stoßschalter oder für Benutzereingaben an der Vorderseite. 
 *   [Infrarotschnittstelle](infrarotschnittstelle.md) 2400Baud bidirektional zur PC Kommunikation und Programmierung. 
 *   [Stromversorgung](stromversorgung.md) über 4 Micro Zellen AAA. Akkus können verwendet werden. Spannungsüberwachung über Widerstandsteiler. 
-*   5 [LEDs](led-anzeigen.md) für Statusanzeigen. <vspace>
+*   5 [LEDs](led-anzeigen.md) für Statusanzeigen. 
 
-##  Zubehör<vspace>
+##  Zubehör
 
 *   [Infrarot RS232 Transceiver](infrarot-rs232-transceiver.md) - Im ASURO Bausatz enthalten 
-*   [Infrarot USB Transceiver](infrarot-usb-transceiver.md) - Optional erhältlich <vspace>
+*   [Infrarot USB Transceiver](infrarot-usb-transceiver.md) - Optional erhältlich 
 
-## Technische Daten<vspace>
+## Technische Daten
 
 | **Allgemeines**                    | Â                                                                                              |
 ||
@@ -57,8 +57,8 @@ Die Platine für die Elektronik dient gleichzeitig als Chassis und Fahrgestell. 
 | Gewichtsverteilung:                | Hinterrädern 65%, Ball 35%                                                                      |
 | **Sonstiges**                      | Â                                                                                              |
 | Reibungskoeffizient Ball:          | 0,3 (Gleitreibung)                                                                            |
-| Haftung der Reifen:                | 0,7 (Haftreibung)                                                                             |<vspace>
+| Haftung der Reifen:                | 0,7 (Haftreibung)                                                                             |
 
-Quelle: Conrad Katalog bzw. Roboternetz. Angaben ohne Gewähr. <vspace>
+Quelle: Conrad Katalog bzw. Roboternetz. Angaben ohne Gewähr. 
 
 

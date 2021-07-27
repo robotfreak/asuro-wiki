@@ -1,33 +1,33 @@
 # Literatur
 
-![][1]<vspace>
+![][1]
 
-Einige Empfehlenswerte Bücher über den ASURO, Robotik und AVR Mikrocontroller. <vspace>
+Einige Empfehlenswerte Bücher über den ASURO, Robotik und AVR Mikrocontroller. 
 
-## ASURO<vspace>
+## ASURO
 
 *   [Mehr Spass mit Asuro Band 1][2] 
-*   [Mehr Spass mit Asuro Band 2][3] <vspace>
+*   [Mehr Spass mit Asuro Band 2][3] 
 
-## Robotik allgemein<vspace>
+## Robotik allgemein
 
-*   [Grundlagen der Robotertechnik][4] <vspace>
+*   [Grundlagen der Robotertechnik][4] 
 
-### englischspachige Bücher<vspace>
+### englischspachige Bücher
 
 *   [Robot Building for Beginners][5] 
 *   [Robot DNA Series Constructing Robot Bases][6] 
 *   [Robot DNA Series Building Robot Drive Trains][7] 
 *   [Robot DNA Series Programming Robot Controllers][8] 
-*   [Insectronics][9] <vspace>
+*   [Insectronics][9] 
 
-## AVR Microcontroller<vspace>
+## AVR Microcontroller
 
 *   [Claus Kühnel: Programmieren der AVR RISC Mikrocontroller mit BASCOM-AVR][10] 
 *   [Roland Walter: AVR Mikrocontroller Lehrbuch][11] 
-*   [Wolfgang Trampert: AVR RISC Mikrocontroller][12] <vspace>
+*   [Wolfgang Trampert: AVR RISC Mikrocontroller][12] 
 
-## Weiterführende Links<vspace>
+## Weiterführende Links
 
 *   [Roboter Bücher bei Amazon][13] 
 *   [Roboternetz Wissen][14] Buchvorstellungen 

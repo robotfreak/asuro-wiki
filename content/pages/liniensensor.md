@@ -2,25 +2,25 @@
 
 ![][1] ![][2]
 
-*Linienfolger* <vspace>
+*Linienfolger* 
 
-## Funktionsweise<vspace>
+## Funktionsweise
 
-Die Front LED beleuchtet den Untergrung auf dem der ASURO fährt. Die beiden Fototransistoren T9 und T10 fangen das reflektierte Licht auf. Die Prozessor Ports PC2 und PC3 sind als A/D Wandler Ports initialisiert und messen die Spannung an den Fototransistoren. Über dunklem Untergrund wird weniger Licht reflektiert als über hellem Untergrund. Entsprechend ändert sich die Spannung an den Fototransistoren und damit der gemessene A/D Wert. <vspace>
+Die Front LED beleuchtet den Untergrung auf dem der ASURO fährt. Die beiden Fototransistoren T9 und T10 fangen das reflektierte Licht auf. Die Prozessor Ports PC2 und PC3 sind als A/D Wandler Ports initialisiert und messen die Spannung an den Fototransistoren. Über dunklem Untergrund wird weniger Licht reflektiert als über hellem Untergrund. Entsprechend ändert sich die Spannung an den Fototransistoren und damit der gemessene A/D Wert. 
 
-## Besondere Verwendung des Liniensensors<vspace>
+## Besondere Verwendung des Liniensensors
 
-### Abgrunderkennung<vspace>
+### Abgrunderkennung
 
-Der Liniensensor kann so programmiert werden, dass der Asuro einen Abgrund erkennen kann und zurückweicht, ohne in die Tiefe zu stürzen. Ein Video dazu gibt es bei Youtube <http://www.youtube.com/watch?v=ibAttdmQ02w> <vspace>
+Der Liniensensor kann so programmiert werden, dass der Asuro einen Abgrund erkennen kann und zurückweicht, ohne in die Tiefe zu stürzen. Ein Video dazu gibt es bei Youtube <http://www.youtube.com/watch?v=ibAttdmQ02w> 
 
-### Balancierender Asuro<vspace>
+### Balancierender Asuro
 
-Von RN-User waste stammt die Idee, den Liniensensor dafür zu benutzen, dass der ASURO auf Hinterrädern balancieren kann, ohne mit dem Tischtennisball den Boden zu berühren. Allerdings sind dazu einige Umbaumaßnahmen erforderlich. Näheres siehe im [Roboternetz][3]. Ein Video gibt es ebenfalls <http://www.youtube.com/watch?v=V0VxL2VqIWQ> <vspace>
+Von RN-User waste stammt die Idee, den Liniensensor dafür zu benutzen, dass der ASURO auf Hinterrädern balancieren kann, ohne mit dem Tischtennisball den Boden zu berühren. Allerdings sind dazu einige Umbaumaßnahmen erforderlich. Näheres siehe im [Roboternetz][3]. Ein Video gibt es ebenfalls <http://www.youtube.com/watch?v=V0VxL2VqIWQ> 
 
-## Programmierung <vspace>
+## Programmierung 
 
-Um die Motoren anzusteuern gibt es in der [Asuro Bibliothek][4] die fertige Funktion LineData() und einige Definitionen. Ein Code Schnipsel dazu: <vspace>
+Um die Motoren anzusteuern gibt es in der [Asuro Bibliothek][4] die fertige Funktion LineData() und einige Definitionen. Ein Code Schnipsel dazu: 
 
   
 Â  unsigned int ldata[2];Â  Â /* Speichervariablen für Liniensensor Daten */Â    
@@ -38,18 +38,18 @@ Um die Motoren anzusteuern gibt es in der [Asuro Bibliothek][4] die fertige Funk
 Â  Â  Â  BackLED(ON,OFF);Â  Â  Â /* linke hintere LED an */  
 Â  Â  elseÂ  (if (diff < -4)Â  /* rechts heller als links */  
 Â  Â  Â  BackLED(OFF,ON);Â  Â  Â /* rechte hintere LED an */  
-Â  }<vspace>
+Â  }
 
-Ein komplettes Beipiel zum Liniensensor findet sich [hier][5]. <vspace>
+Ein komplettes Beipiel zum Liniensensor findet sich [hier][5]. 
 
-## Verbesserungsvorschläge:<vspace>
+## Verbesserungsvorschläge:
 
 *   Die beiden Fototransistoren mit Schrumpfschlauh besser gegen seitlich empfangenes Fremdlicht abschirmen. 
 *   Beim Auswerten der Helligskeitswerte nicht mit Absolutwerten rechnen sondern mit Differenzen. So können Fremdlicht Einflüsse verringert werden 
 *   Die rote Frant LED ist nicht besonders lichtstark. Zudem sind die Fototransistoren mehr empfindlicher für Infrarot Licht. Statt der roten LED könnte man auch eine Infrarot LED verwenden. Allerdings ist Infrarot Licht nicht sichtbar. Man könnte auch eine lichtstarke weiße LED nehmen. Allerdings muß man dabei beachten, daß der Maximalstrom des Prozessor Ports (20mA) nicht überschritten wird, und ob der LED Vorwiderstand (R9) richtig dimensioniert ist. 
-*   Wenn man später einmal eine Erweiterungsplatine einsetzen möchte, sollte man die Bauteile des Liniensensor steckbar machen, wie unter [Liniensensor Modifikation][6] beschrieben. Sonst muß man erst mühsam die Bauteile wieder auslöten. <vspace>
+*   Wenn man später einmal eine Erweiterungsplatine einsetzen möchte, sollte man die Bauteile des Liniensensor steckbar machen, wie unter [Liniensensor Modifikation][6] beschrieben. Sonst muß man erst mühsam die Bauteile wieder auslöten. 
 
-## Weiterführende Links:<vspace>
+## Weiterführende Links:
 
 *   [Linienfolger mit PD-Regler][7]
 
