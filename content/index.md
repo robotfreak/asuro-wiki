@@ -17,7 +17,7 @@ Eine Liste von Modifikation und Erweiterungen des Asuros
 ## Programmierung
 
 Programmierung des Asuros
-  * [Programmierung](%base_url%?pages/programmierung.md)
-  * [Asuro Bibliothek](%base_url%?pages/bibliothek.md)
+  * [Programmierung](%base_url%?pages/programmierung)
+  * [Asuro Bibliothek](%base_url%?pages/bibliothek)
 
 
