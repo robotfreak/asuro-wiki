@@ -1,3 +1,9 @@
+---
+Title: Erweiterungen
+Template: section
+Toc: section
+---
+
 # Erweiterungen
 
 ![ASURO Erweiterungen](%assets_url%/collage_exp.jpg)  

@@ -1,4 +1,7 @@
-twig {{ nested_pages | navigation }}
+---
+Title: Index
+Template: index
+---
 
 # Asuro Wiki
 

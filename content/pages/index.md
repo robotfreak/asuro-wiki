@@ -1,4 +1,10 @@
-# HomePage
+---
+Title: Asuro Einleitung
+Template: section
+Toc: section
+---
+
+# Der Asuro
 
 ![Asuro](%assets_url%/asuro1.gif)
 
