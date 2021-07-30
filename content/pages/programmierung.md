@@ -1,3 +1,9 @@
+---
+Title: Programmierung
+Template: section
+Toc: section
+---
+
 # Programmierung
 
 ASURO Programmierung. 

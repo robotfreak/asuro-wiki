@@ -1,3 +1,9 @@
+---
+Title: Modifikationen
+Template: section
+Toc: section
+---
+
 # Modifikationen
 
 ![ASURO Modifikationen](%assets_url%/collage_mod.jpg)  

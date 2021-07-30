@@ -1,8 +1,19 @@
+---
+Title: Index
+Template: index
+---
+
 # Asuro Wiki
+
+## Einführung
+
+Eine Einführung zum Asuro
+  * [Einführung](%base_url%?pages/index)
+
 
 ## Auf- und Zusammenbau
 
-Eine Einführung in die Zusammenbau und den Aufbau des Asuros.
+Zusammenbau und den Aufbau des Asuros.
   * [Zusammenbau](%base_url%?pages/zusammenbau)
   * [Aufbau](%base_url%?pages/aufbau)
 
