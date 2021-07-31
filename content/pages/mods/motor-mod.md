@@ -1,4 +1,9 @@
-# MotorModifikation
+---
+Title: Motor Modifikation
+Template: section
+---
+
+# Motor Modifikation
 
 ### Austausch der Motoren
 
@@ -10,7 +15,7 @@ Da auch der Durchmesser der Motoren größer ist, muß eine geeignete Motorhalte
 
 
 
-| ![][2] | ![][3] | ![][4] |
+| ![](%assets_url%/motor_mod.jpg) | ![](%assets_url%/motor_halter.jpg) | ![](%assets_url%/faulhaber.jpg) |
 ||
 
 
@@ -25,12 +30,12 @@ Da das Rastermaß auf der Platine nicht für einen normalen 2poligen PSK Steckve
 
 
 
-![][5]  
+![](%assets_url%/mod_motor2.jpg) 
 *Motor Anschlüsse mit PSK Steckverbindern*
 
 
 
-![][6]  
+![](%assets_url%/mod_motor1.jpg)
 *Lochraster Adapter für PSK Steckverbinder *
 
 
@@ -46,9 +51,4 @@ Da das Rastermaß auf der Platine nicht für einen normalen 2poligen PSK Steckve
 *   [Datenblatt der Faulhaber Serie 2224][7]
 
  [1]: http://www.faulhaber-group.com
- [2]: http://www.asurowiki.de/pmwiki/uploads/Main/motor_mod.jpg
- [3]: http://www.asurowiki.de/pmwiki/uploads/Main/motor_halter.jpg
- [4]: http://www.asurowiki.de/pmwiki/uploads/Main/faulhaber.jpg
- [5]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_motor2.jpg
- [6]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_motor1.jpg
  [7]: http://www.faulhaber-group.com/uploadpk/d_2224SR_DFF.pdf

@@ -1,3 +1,8 @@
+---
+Title: Literatur
+Template: section
+---
+
 # Literatur
 
 ![][1]

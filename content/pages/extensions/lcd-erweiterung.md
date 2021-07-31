@@ -1,3 +1,9 @@
+---
+Title: LCD Erweiterung
+Template: chapter
+Toc: chapter
+---
+
 # LCDErweiterung
 
 ![][1]  

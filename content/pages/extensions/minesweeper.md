@@ -1,3 +1,9 @@
+---
+Title: Mine Sweeper
+Template: chapter
+Toc: chapter
+---
+
 # MineSweeper
 
 ## Einleitung

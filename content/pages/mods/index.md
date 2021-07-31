@@ -1,7 +1,6 @@
 ---
 Title: Modifikationen
 Template: section
-Toc: section
 ---
 
 # Modifikationen
@@ -11,13 +10,12 @@ Toc: section
 
 ## Siehe auch
 
-*   [Asuro Eval Board](asuro-evalboard)
-*   [Batteriefach Modifikation](batteriefachmod) 
-*   [Liniensensor Modifikation](liniensensormod) 
-*   [Motor Modifikation](motormod) 
-*   [Odometrie Modifikation](odometriemod) 
-*   [IR Transceiver Modifikation](irtransceivermod) 
-*   [Tischtennisball Ersatz](ttersatz) 
+*   [Batteriefach Modifikation](mods/batteriefach-mod) 
+*   [Liniensensor Modifikation](mods/liniensensor-mod) 
+*   [Motor Modifikation](mods/motor-mod) 
+*   [Odometrie Modifikation](mods/odometrie-mod) 
+*   [IR Transceiver Modifikation](mods/irtransceiver-mod) 
+*   [Tischtennisball Ersatz](mods/ttersatz) 
 *   [Zusammenbau](zusammenbau) - Modifikationen, die man bereits beim Zusammenbau des ASUROs durchführen kann 
 
 ## Weblinks
@@ -35,7 +33,7 @@ Toc: section
 *   schon ab *Asuro Library v261* in **examples/IRCollisionTest** unterstützt 
 *   ab *Asuro Library v270rc3* sogar mit wechselseitiger Ausgabe über *SerPrint()*, siehe folgenden Ausschnitt aus dem Quellcode aus *v270rc3*: 
 
-```c
+~~~c
 static unsigned char ocr2 = 0x91;  
   
 void InitIRDetect(void)  
@@ -50,5 +48,5 @@ void InitUart(void)
 {  
   OCR2  = 0x91;  // duty cycle fuer 36kHz  
 }  
-```
+~~~
 

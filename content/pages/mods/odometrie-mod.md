@@ -1,4 +1,9 @@
-# OdometrieModifikation
+---
+Title: Odometrie Modifikation
+Template: section
+---
+
+# Odometrie Modifikation
 
 ### Auflösung der Odometrie erhöhen
 
@@ -8,7 +13,7 @@ Durch Umlöten der Bauteile (T11, T12, D13 und D14) und aufkleben der Geberschei
 
 
 
- ![][1]  
+ ![](%assets_url%/odometrie_mod.jpg)  
 *Odometrie Modifikation*
 
 
@@ -21,12 +26,12 @@ Um diesen Fehler auszugleichen, lötet man die kurzen Achsen nicht vollständig 
 
 
 
-![][2]  
+![](%assets_url%/mod_odo.jpg)  
 *Achse weiter außen eingelötet*
 
 
 
-![][3]  
+![](%assets_url%/mod_odo1.jpg)
 *Montierte Getrieberäder*
 
 
@@ -37,7 +42,7 @@ Die Fototransistoren sind empfindlich gegen Streulicht. Dagegen helfen Abdeckung
 
 
 
-![][4]  
+![](%assets_url%/mod_odo2.jpg)
 *Sensorabdeckung*
 
 
@@ -47,9 +52,5 @@ Die Fototransistoren sind empfindlich gegen Streulicht. Dagegen helfen Abdeckung
 *   [Roboternetz Thread][5] - Asuro Odometrie Fehler. Zahnrad Spiel verringern. 
 *   [Roboternetz Thread][6] - Asuro und Odometrie. Fremdlichteinstrahlung abschirmen.
 
- [1]: http://www.asurowiki.de/pmwiki/uploads/Main/odometrie_mod.jpg
- [2]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_odo.jpg
- [3]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_odo1.jpg
- [4]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_odo2.jpg
  [5]: http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=8153
  [6]: http://www.roboternetz.de/phpBB2/zeigebeitrag.php?t=12488

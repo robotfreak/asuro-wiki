@@ -1,3 +1,9 @@
+---
+Title: Snake Vision
+Template: chapter
+Toc: chapter
+---
+
 # SnakeVision
 
 ![][1]  

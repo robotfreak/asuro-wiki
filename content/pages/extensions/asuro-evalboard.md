@@ -1,6 +1,12 @@
+---
+Title: Asuro Eval Board
+Template: chapter
+Toc: chapter
+---
+
 # AsuroEvalBoard
 
-![][1]  
+![](%assets_url%/asuro_eval.jpg)  
 *Asuro mit Eval Board und Bluetooth Modem*
 
 
@@ -27,7 +33,7 @@ Wer den Aufwand nicht scheut, kann aber auch die Vorwiderstände R1, R3, R5, R7 
 
 
 
-![][3]  
+![](%assets_url%/asuro_umbau2.jpg)
 *Jumper und Diode werden ausgelötet*
 
 
@@ -38,12 +44,12 @@ Das Asuro Evaluation Board enthält den Prozessor (Original Asuro oder neuer Atm
 
 
 
-![][4]  
+![](%assets_url%//asuro_eval2.jpg) 
 *Das Asuro Eval Board von oben*
 
 
 
-![][5]  
+![](%assets_url%/asuro_eval4.jpg)
 *Das Asuro Eval Board von der Seite*
 
 
@@ -51,11 +57,11 @@ Das Asuro Evaluation Board enthält den Prozessor (Original Asuro oder neuer Atm
 ### Schnittstellen und Erweiterungen
 
 *   I2C. Über Steckbrücken wird die I2C/TWI Schnittstelle des Prozessors auf eine Steckerleiste geführt (Steckverbinder K10). Die Belegung entspricht dem Devantech SRF08/10 Ultraschallsensor. Damit steht dann ein I2C Bus für Erweiterungen zur Verfügung. Daran können dann z.B. Porterweiterungen, I2C Ultraschallwander Modul, Kompass Modul, Co Prozessor, I2C LCD-Modul etc. angeschlossen werden. Bei der Verwendung derI2C Schnittstelle entfallen aber gleichzeitig die beiden A/D Ports für die Batterieabfrage und die Tastsensoren. 
-*   UART. Die UART Pins RX und TX werden über Steckbrücken auf eine 4poligen Buchsenleiste geführt (Steckverbinder K3). Daran kann dann z.B. ein [RS232 Wandler][6], ein [USB-UART Wandler][7], ein Funkmodul oder ein [Bluetooth Modem][8] angeschlossen werden. Durch den Wegfall der IR Schnittstelle, würde mit PB3 ein weiterer Port zur freien Verfügung. Über diesen Port wird beim Original Asuro die IR Sende LED mit dem 36kHz Trägersignal gepulst. 
+*   UART. Die UART Pins RX und TX werden über Steckbrücken auf eine 4poligen Buchsenleiste geführt (Steckverbinder K3). Daran kann dann z.B. ein [RS232 Wandler](rs232-wandler), ein [USB-UART Wandler](usb-uart-wandler), ein Funkmodul oder ein [Bluetooth Modem](extensions/bluetooth-modem) angeschlossen werden. Durch den Wegfall der IR Schnittstelle, würde mit PB3 ein weiterer Port zur freien Verfügung. Über diesen Port wird beim Original Asuro die IR Sende LED mit dem 36kHz Trägersignal gepulst. 
 *   ISP. Ein 10poliger ISP Steckverbinder ist auf dem Board vorhanden (Steckverbinder K13). ISP ist für den Original Asuro Prozessor ohne Belang, da bei diesem ISP deaktiviert ist, ein neuer Prozessor kann aber darüber programmiert werden. Die Prozessoren vom Typ Atmega88 und Atmeg168 besitzen aber zudem noch ein Debug Interface (DebugWire am Reset Pin) und könnten damit on Board über die ISP Schnittstelle debugged werden. Da an den Leitungen zum ISP Steckverbinder normalerweise nur Ausgänge hängen (Motorbrücke) stört der ISP nicht im normalen Betrieb nicht. 
 *   SPI. Der ISP Port kann auch als SPI Port für Erweiterungen benutzt werden. Daran können dann z.B. Porterweiterungen mit Schieberegistern, serielle EEPROMs etc. angeschlossen werden. Dann würde allerdings die Verwendung der Ports als Motorbrücke entfallen. 
-*   Frontbuchse. An der 6polige abgewinkelte Buchsenleiste vorne können Erweiterungsmodule, vorzugweise Hindernisdetektoren bzw. Abstandssensoren angebracht werden. Die Belegung der Frontbuchse ist für den Anschluß diverser [Ultraschallsensoren][9] (z.B. Devantech SRFxx, Maxbotix EZ-Sonar EZ1) ausgelegt. Ebenso kann die Infrarot Schnittstelle, umgebaut zum [Infrarot Hindernisdetektor][10], angeschlossen werden. 
-*   Hintere Buchse. An der 3-poligen Buchsenleiste hinten kann z.B ein Infrarot Empfänger angeschlossen werden, der die Signale einer [RC5 Fernbedienung][11] empfangen und damit den Asuro steuern kann. 
+*   Frontbuchse. An der 6polige abgewinkelte Buchsenleiste vorne können Erweiterungsmodule, vorzugweise Hindernisdetektoren bzw. Abstandssensoren angebracht werden. Die Belegung der Frontbuchse ist für den Anschluß diverser [Ultraschallsensoren](ultraschall-sensoren) (z.B. Devantech SRFxx, Maxbotix EZ-Sonar EZ1) ausgelegt. Ebenso kann die Infrarot Schnittstelle, umgebaut zum [Infrarot Hindernisdetektor](extensions/infrarot-hindernis-detektor), angeschlossen werden. 
+*   Hintere Buchse. An der 3-poligen Buchsenleiste hinten kann z.B ein Infrarot Empfänger angeschlossen werden, der die Signale einer [RC5 Fernbedienung](programmierung/rc5demo) empfangen und damit den Asuro steuern kann. 
 
 
 
@@ -67,14 +73,14 @@ Die Stromversorgung besteht aus einem Linearregler vom Typ LM2940P (der 'beliebt
 
 
 
-![][12]  
+![](%assets_url%/asuro_eval_power_schem4.png)
 *Asuro Eval Power Supply Schaltplan*
 
 Mit zwei Kabeln wird die Stromversorgung zwischen Asuro und dem Eval Board hergestellt. Über das 2-polige Kabel geht die Batteriespannung hinter dem On-Schalter auf dem Asuro zum Asuro Eval Board (Steckverbinder K9). Vom Eval Board führt dann der 3-polige Stecker (Steckverbinder K11) zurück zum Asuro mit der Batteriespannung (hinter FET bzw. Shottky Diode) die geregelte 5V Versorgung für die Asuro Elektronik (rotes Kabel). Die beiden Masseverbindungen sind mit der Asuro Platine an dem zusätzlichen Odometrie Lötpads angeschlossen. Das braune Kabel wird nicht angeschlossen (siehe Nachtrag vom 24.08.2007). 
 
 
 
-![][13]  
+![](%assets_url%/asuro_eval_power.jpg)
 *Asuro Power Supply Verkabelung. Achtung!!! Fehler im Bild. Anleitung lesen*
 
 
@@ -87,24 +93,24 @@ Verwendet man den Original Asuro Prozessor, muß zumindest immer der Prozessor P
 
 ## Schaltplan
 
-![][14]  
+![](%assets_url%/asuro_eval_schem4.png)  
 *Asuro Eval Board Schaltplan*
 
 
 
-![][15]  
+![](%assets_url%/asuro_socket_schem4.png) 
 *Asuro Eval Socket Schaltplan*
 
 
 
 ## Bestückungsplan
 
-![][16]  
+![](%assets_url%/asuro_eval_front2.jpg)
 *Asuro Eval Board Layout Vorderseite*
 
 
 
-![][17]  
+![](%assets_url%/asuro_eval_back2.jpg)
 *Asuro Eval Board Layout Rückseite*
 
 
@@ -159,7 +165,7 @@ Verwendet man den Original Asuro Prozessor, muß zumindest immer der Prozessor P
 
 ## Software
 
-Will man die flexible Architektur des Eval Boards voll ausnutzen, muß auch die Software entsprechend flexibel ausgelegt sein. Dazu wird die [Asuro Bibliothek][18] angepaßt, damit Ports schnell umkonfiguriert werden können und einzelne Baugruppen enabled/disabled werden können. Spezielle Konfigurations Files können erzeugt und werden je nach verwendeter Konfiguration mitübersetzt. Für neue Sensoren müssen eigene Bibliotheksfunktionen geschrieben werden, die dann im Makefile dazugelinkt werden. Evtl. wäre ein Codegenerator nützlich, der aus den verschiedenen Konfigurations Files die passende Bibliothek generiert. 
+Will man die flexible Architektur des Eval Boards voll ausnutzen, muß auch die Software entsprechend flexibel ausgelegt sein. Dazu wird die [Asuro Bibliothek](programming/bibliothek) angepaßt, damit Ports schnell umkonfiguriert werden können und einzelne Baugruppen enabled/disabled werden können. Spezielle Konfigurations Files können erzeugt und werden je nach verwendeter Konfiguration mitübersetzt. Für neue Sensoren müssen eigene Bibliotheksfunktionen geschrieben werden, die dann im Makefile dazugelinkt werden. Evtl. wäre ein Codegenerator nützlich, der aus den verschiedenen Konfigurations Files die passende Bibliothek generiert. 
 
 
 
@@ -173,22 +179,5 @@ Will man die flexible Architektur des Eval Boards voll ausnutzen, muß auch die 
 
 *   [RN Forum Tread][2] - Asuro mit mehr als 10V auf den Motoren
 
- [1]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval.jpg
  [2]: http://www.roboternetz.de/phpBB2/viewtopic.php?t=28762
- [3]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_umbau2.jpg
- [4]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval2.jpg
- [5]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval4.jpg
- [6]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/RS232Wandler
- [7]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/USB-UARTWandler
- [8]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/BluetoothModem
- [9]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/UltraschallsensorenAmEvalBoard
- [10]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/InfrarotHindernisdetektor
- [11]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/RC5DemoC
- [12]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval_power_schem4.png
- [13]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval_power.jpg
- [14]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval_schem4.png
- [15]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_socket_schem4.png
- [16]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval_front2.jpg
- [17]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_eval_back2.jpg
- [18]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/Bibliothek
  [19]: http://www.asurowiki.de/pmwiki/uploads/Main/AsuroEvalBoard.zip

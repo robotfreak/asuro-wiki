@@ -1,4 +1,9 @@
-# LinienverfolgerModul
+---
+Title: Linienverfolger Modifikation
+Template: section
+---
+
+# Linienverfolger Modifikation
 
 ### Modifikation des Liniensensors
 
@@ -16,25 +21,22 @@ Um die Liniensensoren besser gegen Femdeinstrahlung abzuschirmen, kann man die b
 
 
 
-![][1]  
+![](%assets_url%/mod_line.jpg)  
 *Wire Warp Buchsenleiste*
 
 
 
-![][2]  
+![](%assets_url%/mod_line3.jpg)  
 *Asuroplatine von unten mit Steckverbinder*
 
 
 
-![][3]  
+![](%assets_url%/mod_line2.jpg)  
 *Wire Warp Buchsenleiste eingelötet*
 
 
 
-![][4]  
+![](%assets_url%/mod_line1.jpg)  
 *Liniensensor Bauteile aufgesteckt*
 
- [1]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_line.jpg
- [2]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_line3.jpg
- [3]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_line1.jpg
- [4]: http://www.asurowiki.de/pmwiki/uploads/Main/mod_line2.jpg
+ 

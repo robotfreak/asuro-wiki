@@ -1,3 +1,9 @@
+---
+Title: I2C Port Erweiterung
+Template: chapter
+Toc: chapter
+---
+
 # I2CPorterweiterung
 
 ![][1]  

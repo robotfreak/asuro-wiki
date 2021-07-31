@@ -1,3 +1,8 @@
+---
+Title: Aufbau
+Template: section
+---
+
 # Aufbau
 
 ![Asuro von oben](%assets_url%/asuro_oben.jpg)

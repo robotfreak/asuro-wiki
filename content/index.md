@@ -1,6 +1,6 @@
 ---
 Title: Index
-Template: index
+Template: section
 ---
 
 # Asuro Wiki
@@ -21,14 +21,14 @@ Zusammenbau und den Aufbau des Asuros.
 ## Modifikationen und Erweiterungen
 
 Eine Liste von Modifikation und Erweiterungen des Asuros
-  * [Modifikation](%base_url%?pages/modifikationen)
-  * [Erweiterungen](%base_url%?pages/erweiterungen)
+  * [Modifikation](%base_url%?pages/mods/index)
+  * [Erweiterungen](%base_url%?pages/extensions/index)
 
 
 ## Programmierung
 
 Programmierung des Asuros
-  * [Programmierung](%base_url%?pages/programmierung)
+  * [Programmierung](%base_url%?pages/programming/index)
   * [Asuro Bibliothek](%base_url%?pages/bibliothek)
 
 

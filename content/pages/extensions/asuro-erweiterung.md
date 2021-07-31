@@ -1,3 +1,8 @@
+---
+Title: Asuro Erweiterung
+Template: section
+---
+
 # AsuroErweiterung
 
 ## Einleitung
@@ -5,11 +10,11 @@
 ![][1]  
 Asuro Erweiterung mit BT-Modul und ISP [Dieses Bild bei Flickr][2]
 
-Die ASURO Erweiterung besteht zurzeit aus einem [RS232][3] bzw. [Bluetooth Modul][4], einer ISP Schnittstelle und einem RESET Taster. Der Clou bei der Sache ist, die Erweiterung wird nicht, wie das LCD-Modul oder die [SnakeVision][5] Erweiterung, von oben, sondern von unten aufgesteckt. D.h. man kann oben zusätzlich z.B. das [LCD-Modul stecken][6]. Zudem ist auf der Platine noch jede Menge Platz für weitere Features. 
+Die ASURO Erweiterung besteht zurzeit aus einem [RS232](rs232-wandler) bzw. [Bluetooth Modul](extensions/bluetooth-modem), einer ISP Schnittstelle(extensions/isp-erweiterung) und einem RESET Taster. Der Clou bei der Sache ist, die Erweiterung wird nicht, wie das LCD-Modul oder die [SnakeVision](extensions/snakevision) Erweiterung, von oben, sondern von unten aufgesteckt. D.h. man kann oben zusätzlich z.B. das [LCD-Modul stecken](extension/lcd-erweiterung). Zudem ist auf der Platine noch jede Menge Platz für weitere Features. 
 
 ## Durchführung
 
-Durch die Erfahrungen, die ich mit dem ASURO Eval Board gemacht habe, war die Umsetzung nicht sehr schwierig. Dort war ja auch schon das RS232 Modul und das Bluetooth Modul sowie die ISP Schnittstelle vorhanden. Nur ist das ganze jetzt wesentlich kompakter, robuster und nicht so verbaut wie beim [Asuro Eval Board][7]. 
+Durch die Erfahrungen, die ich mit dem ASURO Eval Board gemacht habe, war die Umsetzung nicht sehr schwierig. Dort war ja auch schon das RS232 Modul und das Bluetooth Modul sowie die ISP Schnittstelle vorhanden. Nur ist das ganze jetzt wesentlich kompakter, robuster und nicht so verbaut wie beim [Asuro Eval Board](extension/asuro-evalboard). 
 
 Der ASURO muß allerdings etwas modifiziert werden, damit das ganze auch funktioniert. Wer es nachbauen möchte, sollte schon wissen, was er tut. Die Umbauten sind allerdings nicht so gravierend, dass man das Ganze nicht wieder zurückbauen könnte. Auch ist der einwandfreie Betrieb ohne die Erweiterungsplatine möglich. Es müssen lediglich 3 Jumper am Asuro gesetzt werden. 
 
@@ -36,7 +41,7 @@ Asuro Erweiterungs Platine [Dieses Bild bei Flickr][15]
 
 ### Schaltplan
 
-![][16]
+![]((%assets_url%/asuro_erweiterung_m.png)
 
 ## UART Schnittstelle
 
@@ -44,7 +49,7 @@ Die UART Schnittstelle am ASURO ist normalerweise über eine Infrarot Schnittste
 
 ### RS232 Modul
 
-Das [RS232 Modul][3] besteht aus einem normalen RS232 Pegelwandler Chip, hier ist das der MAX202. Die Steckerbelegung des 6poligen Steckbverbinders ist diesselbe wie beim [Bluetooth Modul][4]. 
+Das [RS232 Modul](rs232-wandler) besteht aus einem normalen RS232 Pegelwandler Chip, hier ist das der MAX202. Die Steckerbelegung des 6poligen Steckbverbinders ist diesselbe wie beim [Bluetooth Modul](extensions/bluetooth-modem). 
 
 ![][17]  
 Asuro RS232-Modul [Dieses Bild bei Flickr][18]
@@ -53,7 +58,7 @@ Der ASURO mit dem [RS232 Modul][3]. Mit den beiden grünen Jumper rechts neben d
 
 ### Bluetooth Modul
 
-Als [Bluetooth Modul][4] kommt das BlueSmiRF von Sparkfun zum Einsatz. Dies ist noch die Version 1.0. Neuere Module verwenden einen Bluegiga Transceiver. 
+Als [Bluetooth Modul](extensions/bluetooth-modem) kommt das BlueSmiRF von Sparkfun zum Einsatz. Dies ist noch die Version 1.0. Neuere Module verwenden einen Bluegiga Transceiver. 
 
 ![][19]  
 Asuro mit BT-Modul [Dieses Bild bei Flickr][20]
@@ -75,11 +80,6 @@ Es fehlen derzeit noch die Liniensensoren. Diese werden dann, wie die Infrarot S
 
  [1]: http://farm3.static.flickr.com/2201/2129839498_1121858e85_b.jpg ""
  [2]: http://www.flickr.com/photos/hmblgrmpf/2129839498/
- [3]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/RS232Wandler
- [4]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/BluetoothModem
- [5]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/SnakeVision
- [6]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/LCDErweiterung
- [7]: http://www.asurowiki.de/pmwiki/pmwiki.php/Main/AsuroEvalBoard
  [8]: http://farm3.static.flickr.com/3224/2364059188_23b25f64a1.jpg ""
  [9]: http://www.flickr.com/photos/hmblgrmpf/2364059188/
  [10]: http://farm3.static.flickr.com/2114/2364059014_96c7077cfb.jpg ""
@@ -88,7 +88,6 @@ Es fehlen derzeit noch die Liniensensoren. Diese werden dann, wie die Infrarot S
  [13]: http://www.flickr.com/photos/hmblgrmpf/2364054602/
  [14]: http://farm3.static.flickr.com/2009/2129053755_ee7e836835_b.jpg ""
  [15]: http://www.flickr.com/photos/hmblgrmpf/2129053755/
- [16]: http://www.asurowiki.de/pmwiki/uploads/Main/asuro_erweiterung_m.png ""
  [17]: http://farm3.static.flickr.com/2355/2129059453_2875df5fe3_b.jpg ""
  [18]: http://www.flickr.com/photos/hmblgrmpf/2129059453/
  [19]: http://farm3.static.flickr.com/2255/2129833192_06fb5463b6_b.jpg ""

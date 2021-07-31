@@ -1,7 +1,6 @@
 ---
 Title: Asuro Einleitung
 Template: section
-Toc: section
 ---
 
 # Der Asuro

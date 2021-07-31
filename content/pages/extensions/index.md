@@ -1,7 +1,6 @@
 ---
 Title: Erweiterungen
 Template: section
-Toc: section
 ---
 
 # Erweiterungen
@@ -9,16 +8,16 @@ Toc: section
 ![ASURO Erweiterungen](%assets_url%/collage_exp.jpg)  
 *ASURO Erweiterungen*
 
-*   [Asuro Erweiterung mit RS232/Bluetooth und ISP](asuro-erweiterung) 
-*   [Bluetooth Modem](bluetooth-modem) für das [Asuro Eval Board](asuro-evalboard) und die [Asuro Erweiterung](asuro-erweiterung) 
-*   [Infrarot Hindernisdetektor](ir-hindernisdetektor) für das [Asuro Eval Board](asuro-evalboard) 
-*   [I2C Digital Porterweiterung](i2c-digital-porterweiterung)
-*   [I2C Analog Porterweiterung](i2c-analog-porterweiterung) 
+*   [Asuro Erweiterung mit RS232/Bluetooth und ISP](extensions/asuro-erweiterung) 
+*   [Bluetooth Modem](bluetooth-modem) für das [Asuro Eval Board](extensions/asuro-evalboard) und die [Asuro Erweiterung](extensions/asuro-erweiterung) 
+*   [Infrarot Hindernisdetektor](infrarot-hindernis-detektor) für das [Asuro Eval Board]extensions/asuro-evalboard) 
+*   [I2C Digital Porterweiterung](extensions/i2c-port-erweiterung)
+*   [I2C Analog Porterweiterung](i2c-analog-port-erweiterung) 
 *   [LCD Erweiterung](lcd-erweiterung) mit dem [I2C Bus](i2c-bus) 
-*   [MineSweeper](minesweeper), der Asuro als Schatzsucher 
-*   [SnakeVision](snakevision) aus dem Buch [Mehr Spass Mit Asuro Band 2][mehr-spass-mit-asuro-2] 
-*   [Ultraschallsensoren am Eval Board](ultraschallsensor)-am-evalboard - Devantech und Maxbotix Module 
-*   [Ultraschall Entfernungsmesser](ultraschallsensor) - Aus dem Buch [Mehr Spass Mit Asuro Band 1](mehr-spass-mit-asuro-1) 
+*   [MineSweeper](extensions/minesweeper), der Asuro als Schatzsucher 
+*   [SnakeVision](extensions/snakevision) aus dem Buch [Mehr Spass Mit Asuro Band 2][mehr-spass-mit-asuro-band2] 
+*   [Ultraschallsensoren am Eval Board](ultraschallsensor-am-evalboard) - Devantech und Maxbotix Module 
+*   [Ultraschall Entfernungsmesser](ultraschallentfernungsmesser) - Aus dem Buch [Mehr Spass Mit Asuro Band 1](mehr-spass-mit-asuro-band1) 
 
 ## Weblinks
 

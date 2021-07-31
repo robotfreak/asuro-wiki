@@ -1,7 +1,6 @@
 ---
 Title: Programmierung
 Template: section
-Toc: section
 ---
 
 # Programmierung

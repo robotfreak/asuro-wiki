@@ -1,4 +1,4 @@
-# BatteriefachModifikation
+# Batteriefach Modifikation
 
 ## Modifikation des Batterie Anschlusses
 
